@@ -1,0 +1,349 @@
+@font-face {
+
+    font-family: 'AbhayaLibre';
+    src: url('resources/Abhaya\ Libre.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Federant Regular';
+    src: url('resources/Federant-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Old Standart TT';
+    src: url('resources/Old\ Standard\ TT\ Regular\ V2.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Abel';
+    src: url('resources/Abel-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: auto;
+    background-color: #eee2df;
+    margin: 0%;
+}
+
+.Encabezado {
+
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    background-color: #eee2df;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+.LogoContainer {
+
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 100px;
+}
+
+.LogoContainer a {
+
+    text-decoration: none;
+}
+
+.NombreLogo {
+
+    font-family: 'Federant Regular';
+    font-size: 36px;
+    color: black;
+}
+
+.Menu-Horizontal {
+
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    min-width: 60%;
+    padding: 0 100px;
+}
+
+.Menu-Horizontal li a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'AbhayaLibre';
+}
+
+.PortadaPrincipal {
+
+    padding: 70px 120px 0 120px;
+}
+
+.TextoPortada {
+
+    height: 100%;
+    width: 320px;
+    text-align: left;
+    padding-left: 50px;
+    align-content: center;
+}
+
+.TextoPortada h2 {
+
+    font-weight: normal;
+    font-family: 'Federant Regular';
+    font-size: 64px;
+}
+
+.TextoPortada p {
+
+    font-family: 'Old Standart TT';
+    font-size: 26px;
+}
+
+.BotonPortada {
+
+    font-family: 'Old Standart TT';
+    text-decoration: none;
+    padding: 10px;
+    border-radius:15px;
+    background-color: #5b61b2;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.BotonPortada:hover {
+
+    background-color: #7179e5;
+}
+
+.Portada {
+
+    height: 560px;
+    width: 100%;
+    background-image: url(resources/PortadaPrincipal.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+
+    box-shadow: inset 400px 0 330px rgb(222, 194, 219, 0.8);
+}
+
+.LineaSeparacionContainer {
+
+    padding: 0 120px 0 120px;
+}
+
+.LineaSeparacion {
+
+    width: 100%;
+    height: 4px;
+    background-color: #5b61b2;
+    margin-top: 10px;
+
+}
+
+.SeccionNoticias {
+
+    margin-top: 90px;
+}
+
+.TituloNoticias {
+
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 108px;
+    height: 228px;
+    background-color: #6da0e1;
+}
+
+.TituloNoticias h2 {
+
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 96px;
+}
+
+.NoticiasContainer {
+
+    padding: 33px 119px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Noticia {
+
+    max-width: 408px;
+}
+
+.Noticia img {
+
+    width: 404px;
+    height: 412px;
+}
+
+.EncabezadoNoticia p {
+
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: 'Old Standart TT';
+    color: #5b61b2;
+}
+
+.EncabezadoNoticia p span#FechaNoticia {
+
+    font-family: 'Federant Regular';
+    color: black;
+    text-align: right;
+}
+
+.TituloNoticia h3{
+
+    font-weight: 100;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-family: 'Federant Regular';
+    font-size: 24px;
+}
+
+.InformacionNoticia p {
+
+    font-family: 'Old Standart TT';
+    margin-top: 4px;
+    font-size: 24px;
+}
+
+.SeccionMapas {
+
+    margin-top: 90px;
+    background-color: #eee2df;
+}
+
+.TituloMapas {
+
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 108px;
+    height: 228px;
+    background-color: #6da0e1;
+    position: relative;
+    z-index: 2;
+}
+
+.TituloMapas h2 {
+
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 96px;
+}
+
+.MapasContainer {
+
+    justify-self: center;
+    width: 54%;
+    background-color: #eee2df;
+}
+
+.MapaTipo1, .MapaTipo2 {
+
+    
+    padding: 33px 0 100px 0;
+    display: flex;
+    
+}
+
+.MapaTipo1 img, .MapaTipo2 img {
+
+    width: 404px;
+}
+
+.TextoMapaTipo1 {
+
+    padding: 0 0 0 50px;
+    font-size: 24px;
+}
+
+.TextoMapaTipo2 {
+
+    padding: 0 50px 0 0;
+    font-size: 24px;
+}
+
+.TextoMapaTipo1 h3, .TextoMapaTipo2 h3 {
+
+    font-family: 'Federant Regular';
+}
+
+.TextoMapaTipo1 p, .TextoMapaTipo2 p {
+
+    font-family: 'Old Standart TT';
+}
+
+.SeccionSoporte {
+
+    margin-top: 90px;
+}
+
+.TituloSoporte {
+
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 108px;
+    height: 228px;
+    background-color: #6da0e1;
+    position: relative;
+    z-index: 2;
+}
+
+.TituloSoporte h2 {
+
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 96px;
+}
+
+.HeaderSoporte {
+
+    font-family: 'Abel';
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.HeaderSoporte h3 {
+
+    padding: 0 35px;
+}
+
+.HeaderSoporte span {
+
+    display: inline-block;
+    height: 43px;
+    flex: 1;
+    background-color: #6da0e1;
+}
