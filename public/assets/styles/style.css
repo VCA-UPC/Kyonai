@@ -351,7 +351,7 @@ html, body {
 /* Estilos para Registro */
 
 .TituloRegistro {
-    padding: 100px 20px 0px 50px;
+    padding: 70px 20px 0px 50px;
     max-height: 228px;
     background-color: #5b61b2;
     position: relative;
@@ -363,8 +363,14 @@ html, body {
     font-size: 48px;
 }
 
+.Separador {
+    padding-top: 5px;
+    height: 100%;
+    min-height: 5px;
+}
+
 .FormularioRegistroGeneral {
-    background-color:#eee2df;
+    background-image: url(images/Fondo-tipo1.png);
     padding: 40px;
     padding-top:50px;
     border: 2px;
@@ -449,5 +455,20 @@ html, body {
 .BotonTipo1 {
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Recuperar contraseña */
+.Opciones-cuenta-general {
+    text-align: center;
+}
+
+.Opciones-cuenta-texto {
+    line-height: 2px;
+}
+
+.Opciones-cuenta-texto p a {
+    text-decoration: none;
+    color: white;
 }
 
