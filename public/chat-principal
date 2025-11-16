@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyonai</title>
+</head>
+<body>
+    <section class="Titulo-horizontal">
+        <a href="Simulacion.html">
+            <img src="flechita" alt="">
+        </a>
+        <h1>Chat</h1>
+    </section>
+    <section class="Chat-general">
+        <div class="Menu-Horizonal-videojuego-tipo1">
+            <ul>
+                <li><a href="">Amigos</a></li>
+                <li><a href="">Grupos</a></li>
+                <li><a href="">Crear Grupo</a></li>
+            </ul>
+        </div>
+        <!--Menu vertical Lista de Amigos-->
+        <div class="Menu-vertical-videojuego-tipo2">
+            <div class="Subtitulo"><h2>Lista de Amigos</h2></div>
+            <div class="Lista-Amigos">
+                <div class="Amigo">
+                    <img href="" alt="">
+                    <h4>NoobxSiempre</h4>
+                </div>
+                <div class="Amigo">
+                    <img href="" alt="">
+                    <h4>Kendo7200</h4>
+                </div>
+                <div class="Amigo">
+                    <img href="" alt="">
+                    <h4>Chopper</h4>
+                </div>
+                <div class="Amigo">
+                    <img href="" alt="">
+                    <h4>Yona</h4>
+                </div>
+                <div class="Amigo">
+                    <img href="" alt="">
+                    <h4>Poyo</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Chat especificamente-->
+         <div class="Chat-general">
+            <div class="Chat-medidas">
+                <div class="Mensajes">
+                    <img href="" alt="">
+                </div>
+                <div class="Cuadro-texto">
+                    <img href="" alt="">
+                    <img href="" alt="">
+                </div>
 
+            </div>
+         </div>
+
+    </section>
+</body>
