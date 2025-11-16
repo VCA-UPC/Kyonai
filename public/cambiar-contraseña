@@ -6,3 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyonai</title>
 </head>
+     <body>
+        <!--Seccion del formulario-->
+        <section class="Cambiar-contraseña-general">
+            <section class="Cambiar-contraseña-cuadro">
+                <!--Titulo y logo -->
+                <div class="Titulo-ajustes-cuenta">
+                    <img src="" alt="">
+                    <div class="Titulo-ajustes-texto">
+                        <h1>Kyonai</h1>
+                    </div>
+                </div>
+
