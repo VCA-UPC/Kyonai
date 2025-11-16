@@ -28,5 +28,14 @@
                         <input type="text" id="tb-contraseña">
                     </div>
                 </div>
+                <!-- Boton de registro -->
+                     <div class="BotonTipo1">
+                        <button type="Submit">Guardar Cambios</button>
+                    </div>
+            </section>
+        </section>
+
+    </body>
+</html>
                 
 
