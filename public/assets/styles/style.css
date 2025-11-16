@@ -1,7 +1,7 @@
 @font-face {
 
     font-family: 'AbhayaLibre';
-    src: url('resources/Abhaya\ Libre.woff') format('woff');
+    src: url('../Abhaya\ Libre.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
 
     font-family: 'Federant Regular';
-    src: url('resources/Federant-Regular.woff') format('woff');
+    src: url('../Federant-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -17,18 +17,19 @@
 @font-face {
 
     font-family: 'Old Standart TT';
-    src: url('resources/Old\ Standard\ TT\ Regular\ V2.woff') format('woff');
-    font-weight: 400;
+    src: url('../Old\ Standard\ TT\ Regular\ V2.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-
-    font-family: 'Abel';
-    src: url('resources/Abel-Regular.woff') format('woff');
+    font-family: "Abel";
+    src: url("../Abel-Regular.woff") format("woff"),
+         url("../Abel-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
+
 
 html, body {
 
@@ -85,10 +86,16 @@ html, body {
 
 .Menu-Horizontal li a {
 
+    font-size: 24px;
     display: inline-block;
     text-decoration: none;
     color: black;
     font-family: 'AbhayaLibre';
+}
+
+.Menu-Horizontal li a:hover {
+
+    color: #7179e5;
 }
 
 .PortadaPrincipal {
@@ -139,7 +146,7 @@ html, body {
 
     height: 560px;
     width: 100%;
-    background-image: url(resources/PortadaPrincipal.png);
+    background-image: url(../images/PortadaPrincipal.png);
     background-position: center;
     background-size: cover;
     background-color: black;
@@ -212,7 +219,7 @@ html, body {
     color: #5b61b2;
 }
 
-.EncabezadoNoticia p span#FechaNoticia {
+.FechaNoticia {
 
     font-family: 'Federant Regular';
     color: black;
@@ -348,6 +355,303 @@ html, body {
     background-color: #6da0e1;
 }
 
+.SubituloNoticias {
+
+    font-family: 'Abel';
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.SubituloNoticias h3 {
+
+    padding: 0 35px 0 120px;
+}
+
+.SubituloNoticias span {
+
+    margin-right: 120px;
+    display: inline-block;
+    height: 43px;
+    flex: 1;
+    background-color: #dec1db;
+}
+
+.Division {
+
+    margin: 0 120px;
+    display: block;
+    height: 43px;
+    
+    background-color: #dec1db;
+}
+
+.SeccionNosotros {
+
+    margin: 40px 120px;
+    display: flex;
+}
+
+.TextoNosotros {
+
+    width: 50%;
+}
+
+.TextoNosotros h2 {
+
+    font-family: 'AbhayaLibre';
+    margin: 0;
+    font-size: 73px;
+}
+
+.TextoNosotros p {
+
+    font-family: 'Abel';
+    font-size: 32px;
+    line-height: 1.7;
+}
+
+.SeccionNosotros .ImagenContainer {
+
+    width: 50%;
+    height: 600px;
+    background-image: url(../images/QuienesSomos.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.footerPrincipal, .footerMapa, .footerSoporte {
+
+    box-shadow: inset 0 4px 8px rgb(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dec1db;
+    font-family: 'Abel';
+    font-size: 18px;
+}
+
+.footerMapa {
+
+    background-color: #6da0e1;
+}
+
+.footerSoporte {
+
+    background-color: #2f80e4;
+}
+
+.SocialMediaContainer {
+
+    margin-top: 21px;
+    justify-content: center;
+    display: flex;
+}
+
+.Logo {
+
+    margin: 12px;
+    justify-items: center;
+    justify-content: center;
+    max-width: 48px;
+    border-radius: 5px;
+    background-color: #968093;
+}
+
+.Logo img {
+
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.footerPrincipal .LogoContainer, .footerMapa .LogoContainer, .footerSoporte .LogoContainer {
+
+    margin: 15px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.footerPrincipal .LogoContainer img, .footerMapa .LogoContainer img, .footerSoporte .LogoContainer img {
+
+    max-width: 100px;
+}
+
+.TextoCopyright {
+
+    text-align: center;
+}
+
+.TerminosCondicionesTexto {
+
+    display: flex;
+    justify-content: center;
+}
+
+.TerminosCondicionesTexto p {
+
+    margin: 20px 37px;
+}
+
+.HerramientasSoporteContainer {
+
+    padding: 0 300px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Link a {
+
+    display: flex;
+    justify-content: space-between; /* texto a la izquierda, flecha a la derecha */
+    align-items: center; /* centra verticalmente */
+    width: 100%;
+    text-decoration: none;
+    color: white; /* mantiene el color del texto */
+    background-color: #6da0e1;
+    padding: 0 13px;
+    border-radius: 15px;
+    transition: 0.3s;
+    
+}
+
+.Link a:hover {
+
+    background-color: #5b61b2;
+    transform: scale(1.1);
+}
+
+.Link {
+
+    font-family: 'Abel';
+    font-size: 32px;
+    margin: 50px;
+}
+
+
+
+.Link img {
+
+    justify-self: right;
+    transform: rotate(45deg);
+    margin: 0 12px;
+    width: 52px;
+    height: 52px;
+}
+
+.FelixContainer {
+
+    max-width: 340px;
+    max-height: 510px;
+}
+
+.FelixContainer img {
+
+    width: 100%;
+}
+
+.MasAyudaContainer {
+
+    display: flex;
+    height: 595px;
+    margin-bottom: 40px;
+}
+
+.MasAyudaContainerTexto {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;    
+    width: 50%;
+    justify-content: center;
+}
+
+.MasAyudaContainerTexto p {
+
+    font-family: 'AbhayaLibre';
+    line-height: 6rem;
+    margin: 15px 0;
+    padding: 0px 80px;
+    text-align: center;
+}
+
+.MasAyudaContainerTexto span {
+
+    display: block;
+    background-color: #2f80e4;
+    height: 20px;
+}
+
+.ContactanosCuadro {
+
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: #2f80e4;
+}
+
+.ContactanosCuadro h3 {
+
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    margin: 40px 0 10px 0;
+}
+
+.ContactanosCuadro input {
+
+    margin: 20px 124px;
+    height: 50px;
+    font-size: 20px;
+}
+
+input::placeholder {
+
+    font-family: 'AbhayaLibre';
+    padding: 10px;
+}
+
+#mensaje {
+
+    margin: 20px 124px;
+    height: 150px;
+    padding: 10px;
+    font-family: 'AbhayaLibre';
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+#mensaje::placeholder {
+
+    font-family: 'AbhayaLibre';
+}
+
+.ContactanosCuadro button {
+
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: white;
+    align-self: center;
+    margin: 20px 0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.ContactanosCuadro button:hover {
+
+    
+    transform: scale(1.1);
+    color: white;
+    background-color: #5b61b2;
+}
+
 /* Estilos para Registro */
 
 .TituloRegistro {
@@ -451,3 +755,28 @@ html, body {
     padding-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .Menu-Horizontal {
+        display: none;
+    }
+    .Encabezado {
+        justify-content: center;
+    }
+    .LogoContainer {
+        padding: 0;
+    }
+    .PortadaPrincipal {
+        padding: 70px 0 0 0;
+    }
+    .LineaSeparacionContainer {
+        padding: 0 0 0 0;
+    }
+    .TextoPortada {
+        padding: 0;
+        text-align: center;
+    }
+    .Portada {
+        box-shadow:inset 0 0 800px 200px rgba(222, 194, 219, 0.8);
+        justify-items: center;
+    }
+}
