@@ -655,7 +655,7 @@ input::placeholder {
 /* Estilos para Registro */
 
 .TituloRegistro {
-    padding: 70px 20px 0px 50px;
+    padding: 100px 20px 0px 50px;
     max-height: 228px;
     background-color: #5b61b2;
     position: relative;
@@ -667,14 +667,8 @@ input::placeholder {
     font-size: 48px;
 }
 
-.Separador {
-    padding-top: 5px;
-    height: 100%;
-    min-height: 5px;
-}
-
 .FormularioRegistroGeneral {
-    background-image: url(images/Fondo-tipo1.png);
+    background-color:#eee2df;
     padding: 40px;
     padding-top:50px;
     border: 2px;
@@ -759,21 +753,6 @@ input::placeholder {
 .BotonTipo1 {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-/* Recuperar contraseña */
-.Opciones-cuenta-general {
-    text-align: center;
-}
-
-.Opciones-cuenta-texto {
-    line-height: 2px;
-}
-
-.Opciones-cuenta-texto p a {
-    text-decoration: none;
-    color: white;
 }
 
 @media (max-width: 768px) {
