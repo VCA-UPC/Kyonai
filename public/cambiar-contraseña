@@ -17,4 +17,11 @@
                         <h1>Kyonai</h1>
                     </div>
                 </div>
+                 <!--Formulario netamente-->
+                <div class="FormularioVideojuego">
+                    <div class="Campo">
+                        <label for="NombreUsuario">Contraseña Actual</label>
+                        <input type="text" id="tb-nombre-usuario">
+                    </div>
+                    
 
