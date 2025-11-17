@@ -674,7 +674,7 @@ input::placeholder {
 }
 
 .FormularioRegistroGeneral {
-    background-image: url(Fondo-tipo1.png);
+    background-image: url(images/Fondo-tipo1.png);
     padding: 40px;
     padding-top:50px;
     border: 2px;
@@ -789,4 +789,5 @@ input::placeholder {
         justify-items: center;
     }
 }
+
 
