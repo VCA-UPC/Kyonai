@@ -761,6 +761,18 @@ input::placeholder {
     padding-top: 20px;
     padding-bottom: 10px;
 }
+.Opciones-cuenta-general {
+    text-align: center;
+}
+
+.Opciones-cuenta-texto {
+    line-height: 2px;
+}
+
+.Opciones-cuenta-texto p a {
+    text-decoration: none;
+    color: white;
+}
 
 /* Fin seccion Registro */
 
@@ -789,6 +801,7 @@ input::placeholder {
         justify-items: center;
     }
 }
+
 
 
 
