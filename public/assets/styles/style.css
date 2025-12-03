@@ -276,11 +276,8 @@ html, body {
 }
 
 .MapaTipo1, .MapaTipo2 {
-
-    
     padding: 33px 0 100px 0;
     display: flex;
-    
 }
 
 .MapaTipo1 img, .MapaTipo2 img {
@@ -310,51 +307,6 @@ html, body {
     font-family: 'Old Standart TT';
 }
 
-.SeccionSoporte {
-
-    margin-top: 90px;
-}
-
-.TituloSoporte {
-
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 108px;
-    height: 228px;
-    background-color: #6da0e1;
-    position: relative;
-    z-index: 2;
-}
-
-.TituloSoporte h2 {
-
-    font-weight: 100;
-    font-family: 'Old Standart TT';
-    color: white;
-    font-size: 96px;
-}
-
-.HeaderSoporte {
-
-    font-family: 'Abel';
-    font-size: 46px;
-    display: flex;
-    align-items: center;
-}
-
-.HeaderSoporte h3 {
-
-    padding: 0 35px;
-}
-
-.HeaderSoporte span {
-
-    display: inline-block;
-    height: 43px;
-    flex: 1;
-    background-color: #6da0e1;
-}
-
 .SubituloNoticias {
 
     font-family: 'Abel';
@@ -364,7 +316,6 @@ html, body {
 }
 
 .SubituloNoticias h3 {
-
     padding: 0 35px 0 120px;
 }
 
@@ -438,7 +389,6 @@ html, body {
 }
 
 .footerSoporte {
-
     background-color: #2f80e4;
 }
 
@@ -493,16 +443,7 @@ html, body {
     margin: 20px 37px;
 }
 
-.HerramientasSoporteContainer {
-
-    padding: 0 300px;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-}
-
 .Link a {
-
     display: flex;
     justify-content: space-between; /* texto a la izquierda, flecha a la derecha */
     align-items: center; /* centra verticalmente */
@@ -513,99 +454,12 @@ html, body {
     padding: 0 13px;
     border-radius: 15px;
     transition: 0.3s;
-    
 }
 
 .Link a:hover {
 
     background-color: #5b61b2;
     transform: scale(1.1);
-}
-
-.Link {
-
-    font-family: 'Abel';
-    font-size: 32px;
-    margin: 50px;
-}
-
-
-
-.Link img {
-
-    justify-self: right;
-    transform: rotate(45deg);
-    margin: 0 12px;
-    width: 52px;
-    height: 52px;
-}
-
-.FelixContainer {
-
-    max-width: 340px;
-    max-height: 510px;
-}
-
-.FelixContainer img {
-
-    width: 100%;
-}
-
-.MasAyudaContainer {
-
-    display: flex;
-    height: 595px;
-    margin-bottom: 40px;
-}
-
-.MasAyudaContainerTexto {
-
-    display: flex;
-    flex-direction: column;
-    font-size: 64px;    
-    width: 50%;
-    justify-content: center;
-}
-
-.MasAyudaContainerTexto p {
-
-    font-family: 'AbhayaLibre';
-    line-height: 6rem;
-    margin: 15px 0;
-    padding: 0px 80px;
-    text-align: center;
-}
-
-.MasAyudaContainerTexto span {
-
-    display: block;
-    background-color: #2f80e4;
-    height: 20px;
-}
-
-.ContactanosCuadro {
-
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
-    background-color: #2f80e4;
-}
-
-.ContactanosCuadro h3 {
-
-    text-align: center;
-    color: white;
-    font-size: 75px;
-    margin: 40px 0 10px 0;
-}
-
-.ContactanosCuadro input {
-
-    margin: 20px 124px;
-    height: 50px;
-    font-size: 20px;
 }
 
 input::placeholder {
@@ -615,7 +469,6 @@ input::placeholder {
 }
 
 #mensaje {
-
     margin: 20px 124px;
     height: 150px;
     padding: 10px;
@@ -625,31 +478,7 @@ input::placeholder {
 }
 
 #mensaje::placeholder {
-
     font-family: 'AbhayaLibre';
-}
-
-.ContactanosCuadro button {
-
-    font-family:sans-serif;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    background-color: white;
-    align-self: center;
-    margin: 20px 0;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    transition: 0.3s;
-}
-
-.ContactanosCuadro button:hover {
-
-    
-    transform: scale(1.1);
-    color: white;
-    background-color: #5b61b2;
 }
 
 
