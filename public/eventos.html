@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-eventos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyonai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="Eventos">
+        <div class="Menu-vertical-videojuego-tipo1">
+            <div class="Tipos-titulo">
+                <h2>Tipos</h2>
+            </div>
+            <ul>
+                <li><a href="../assets/Misiones.html">Diarias</a></li>
+                <li><a href="../assets/Misiones-cooperativas.html">Cooperativas</a></li>
+                <li><a href="../assets/eventos.html">Eventos</a></li>
+            </ul>
+        </div>
+        <section class="Eventos-general">
+            <div class="Titulo-horizontal">
+                <div class="Regresar">
+                    <a href="../assets/Simulacion.html">
+                        <i class="fa-solid fa-play fa-flip-horizontal"></i>
+                    </a>
+                </div>
+      
+                <div class="Eventos-titulo">
+                    <h1>Eventos</h1>
+                </div>
+            </div>
+
+            <section class="Eventos-contenido">
+                <div class="Menu-vertical-videojuego-tipo2">
+                    <div class="Subtitulo">
+                        <a href="../assets/Evento-buscado.html">
+                            <i class="fa-solid fa-filter" onclick=""></i>
+                        </a>
+                        <h2>Filtros</h2>
+                    </div>
+                    <div class="form-filtro">
+                        <div class="form-grupo">
+                            <h4>Interacción</h4>
+                            <form>
+                                <label>
+                                    <input type="radio" name="interaccion" value="alta">
+                                    Alta
+                                </label>
+                                
+                                <label>
+                                    <input type="radio" name="interaccion" value="media">
+                                    Media
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="interaccion" value="baja">
+                                    Baja
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="form-grupo">
+                            <h4>Asistentes</h4>
+                            <form>
+                                <label>
+                                    <input type="radio" name="asistentes" value="10-20">
+                                    10 - 20
+                                </label>
+                                <label>
+                                    <input type="radio" name="asistentes" value="20-30">
+                                    20 - 30
+                                </label>
+                                <label>
+                                    <input type="radio" name="asistentes" value="30-50">
+                                    30 - 50
+                                </label>
+                                <label>
+                                    <input type="radio" name="asistentes" value="50+">
+                                    50 +
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="boton-aplicar">
+                            <button type="button" onclick="MostrarEventoFiltrado()">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Eventos-contenido-items">
+                    
+                    <div class="Barra-busqueda">
+                        <input type="text" placeholder="Buscar..">
+                        <i class="fa-solid fa-magnifying-glass" id="btn-bsucar" onclick="MostrarEventoBuscado()"></i>
+                    </div>
+                    <div class="Items-mostrados">
+                        <div class="Evento-item">
+                            <img src="../assets/images/Evento-1.png" alt="">
+                            <div class="Evento-item-titulo">
+                                <p>Visita el Parque San José y conoce 3 nuevos amigos</p>
+                            </div>
+                        </div>
+
+                        <div class="Evento-item">
+                            <img src="../assets/images/Evento-2.png" alt="">
+                            <div class="Evento-item-titulo">
+                                <p>Parque de las leyendas</p>
+                            </div>
+                        </div>
+
+                        <div class="Evento-item">
+                            <img src="../assets/images/Evento-3.png" alt="">
+                            <div class="Evento-item-titulo">
+                                <p>Text3</p>
+                            </div>
+                        </div>
+
+                        <div class="Evento-item">
+                            <img src="../assets/images/Evento-2.png" alt="">
+                            <div class="Evento-item-titulo">
+                                <p>Text4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+    <script src="../assets/scripts/evento.js"></script>
+</body>

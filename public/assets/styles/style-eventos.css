@@ -1,0 +1,373 @@
+.Eventos{
+    display: flex;
+    height: 100%;
+    max-height: 44.8rem;
+}
+
+.Eventos-general{
+    width: 100%;
+}
+
+.fa-play{
+    color: white;
+    font-size: 4rem;
+    margin-right: 2.5rem;
+}
+
+.Titulo-horizontal {
+    padding: 2rem 1.25rem 2rem 3.125rem;
+    max-height: 6rem;
+    background-color: #5b61b2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    position: static;
+}
+
+.Titulo-horizontal h1 {
+    color: white;
+    font-size: 6rem;
+    margin: 0rem;
+}
+
+.Menu-vertical-videojuego-tipo1{
+    background-color: #7179e5;
+    width: 100%;
+    max-width: 15rem;
+    height: 100%;
+    min-height: 58rem;
+    margin: 0rem;
+    text-align: left;
+}
+
+.Tipos-titulo{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.Menu-vertical-videojuego-tipo1 ul {
+    padding-left: 0rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li {
+    list-style: none;
+    margin-left: 0rem;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li:hover {
+    background-color: #5b61b2;
+    border: 0.5px solid black;
+}
+
+
+.Menu-vertical-videojuego-tipo2{
+    background-color: #6da0e1;
+    width: 100%;
+    max-width: 15rem;
+    height: 100%;
+    min-height: 47.6rem;
+    border: 0.5px solid black;
+}
+
+.Subtitulo {
+    display: flex;
+    text-align: center;
+    padding: 0.8rem 0rem 0.8rem 0.5rem;
+    background-color: rgba(217, 217, 217, 1);
+    border: 0.5px solid black;
+    position: sticky;
+    top:0;
+}
+
+.Subtitulo h2 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.fa-filter{
+    font-size: 1.6rem;
+    color: black;
+    margin: 0.6rem 0rem 0rem 0.2rem;
+}
+
+.form-grupo {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.form-grupo h4 {
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    padding-bottom: 0.7rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.form-grupo form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form-grupo label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.3rem 0;
+}
+
+.form-grupo input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.boton-aplicar {
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton-aplicar button {
+    background-color: #7179e5;
+    color: white;
+    border: 1px solid black;
+    padding: 0.8rem 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60%;
+}
+
+.boton-aplicar button:hover {
+    background-color: #5b61b2;
+}
+
+.Subtitulo {
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    background-color: rgba(217, 217, 217, 1);
+    border: 0.5px solid black;
+    position: sticky;
+
+}
+
+.Subtitulo h2 {
+    font-size: 1.8rem;
+}
+
+.Eventos-contenido{
+    display: flex;
+    background-color: rgb(222, 194, 219, 0.8);
+    height: 100%;
+    max-height: 65rem;
+    padding-bottom: 3rem;
+}
+
+.Eventos-contenido-items{
+    background-color: white;
+    flex: 1;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+    border: 1px solid black;
+}
+
+.Barra-busqueda{
+    display: flex;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.fa-magnifying-glass{
+    font-size: 2rem;
+    color: black;
+    margin: 0.5rem 0rem 0rem 0.6rem;
+    cursor: pointer;
+}
+
+.Barra-busqueda input{
+    width: 90%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+
+.Barra-busqueda input:focus {
+    outline: none;
+    border-color: black;}
+
+.Evento-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.Evento-item:hover {
+    background-color: #f8f9fa;
+}
+
+.Evento-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .fa-play{
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .Titulo-horizontal{
+        height: 0.2rem;
+    }
+
+    .Titulo-horizontal h1{
+        font-size: 1.7rem;
+        padding: 0.2rem;
+    }
+    
+    .Eventos {
+        flex-direction: column;
+    }
+    
+    .Menu-vertical-videojuego-tipo1 {
+        width: 100%;
+        min-height: 2rem;
+        height: 100%;
+        max-height: 3rem;
+        max-width: 47rem;
+        padding: 0rem;
+        margin: 0rem;
+    }
+    
+    .Menu-vertical-videojuego-tipo1 ul {
+        display: flex;
+        padding: 0rem;
+        margin: 0rem;
+        min-height: 2rem;
+        justify-content:space-between;
+        gap: 0rem;
+    }
+
+    .Menu-vertical-videojuego-tipo1 ul li{
+        margin: 0rem;
+        padding: 0rem;
+        width: 100%;
+        max-width: 15rem;
+        text-align: center;
+        min-height: 2rem;
+    }
+
+    .Menu-vertical-videojuego-tipo1 ul li a{
+        width: 100%;
+        max-width: 5rem;
+        font-size: 1.2rem;
+        min-height: 2rem;
+        padding: 0rem;
+        margin: 0rem;
+        line-height: 2.7rem;
+    }
+    
+    .Tipos-titulo {
+        display: none;
+    }
+
+    .Menu-vertical-videojuego-tipo2{
+        background-color: #6da0e1;
+        width: 80%;
+        max-width: 10rem;
+        height: 100%;
+        max-height: 30rem;
+        min-height: 23rem;
+        border: 0.5px solid black;
+    }
+
+    .Subtitulo {
+        padding: 0.2rem;
+    }
+
+    .Subtitulo h2 {
+        font-size: 1rem;
+    }
+
+    .fa-filter{
+        font-size: 1rem;
+    }
+
+    .Eventos-contenido-items{
+        margin: 1rem;
+    }
+
+    .Barra-busqueda {
+        padding: 0.3rem;
+        padding-bottom: 0.7rem;
+        margin: 0.5rem;
+    }
+
+    .fa-magnifying-glass{
+        font-size: 1.3rem;
+        color: black;
+        margin: 0.5rem 0rem 0rem 0.6rem;
+    }
+
+    .Barra-busqueda input {
+        padding: 0.5rem;
+    }
+
+    .Eventos-contenido{
+        display: flex;
+        background-color: rgb(222, 194, 219, 0.8);
+        height: 100%;
+        min-height: 20rem;
+        max-height: 20rem;
+        padding-bottom: 3rem;
+    }
+
+    .Evento-item{
+        font-size: 1rem;
+    }
+    
+    .Items-mostrados{
+        overflow: scroll;
+    }
+
+    .form-filtro{
+        overflow: scroll;
+        max-height:19.5rem;
+    }
+
+}
