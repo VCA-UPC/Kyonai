@@ -1,0 +1,243 @@
+/* SOPORTE: Estilos para Soporte */
+
+.SeccionSoporte {
+    margin-top: 90px;
+}
+
+.TituloSoporte {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 4rem;
+    height: 228px;
+    background-color: #2f80e4;
+    position: relative;
+    z-index: 2;
+}
+
+.TituloSoporte h2 {
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 90px;
+}
+
+
+/* Seccion de las herramientas */
+.HeaderSoporte {
+    font-family: 'Abel';
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    height: 8rem;
+}
+
+.HeaderSoporte h3 {
+    padding: 0rem 3.75rem;
+}
+
+.HerramientasSoporteContainer {
+    padding: 0px;
+    width: 100%;
+    align-items: left;
+    justify-content: space-between;
+    display: flex;
+}
+
+.LinksContainer{
+    display: flex;
+    gap:3rem;
+    width: 100%;
+    padding-left: 3.75rem;
+}
+
+.Link {
+    font-family: 'Abel';
+    font-size: 32px;
+    padding: 20px;
+    width: 40%;
+}
+
+.Link img {
+    justify-self: right;
+    transform: rotate(45deg);
+    margin: 0 12px;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.FelixContainer img {
+    max-width: 100px;
+    max-height: 300px;
+}
+
+/* Seccion del contacto */
+.MasAyudaContainer{
+    display: flex;
+    gap: 3.5rem;
+    padding: 0rem 2rem 3rem 0rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.MasAyudaContainerTexto {
+    width: 40%;
+    text-align: left;
+    padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+}
+
+.MasAyudaContainerTexto p {
+    font-size: 4rem;
+}
+
+/* Formulario para Contactanos */
+.FormContactanos {
+    width: 100%;
+}
+
+.ContactanosCuadro {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background-color: #2f80e4;
+    max-width: 40rem;
+    width: 87%;
+    margin-top: 2rem;
+    border: 2px solid white;
+    border-radius: 0.3125rem;
+}
+
+.ContactanosCuadro h3 {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0rem 0.5rem 0 0.5rem;
+}
+
+.Campo {
+    width: 85%;
+    margin-bottom: 1rem;
+    padding: 0rem 1rem 0rem 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.Campo input {
+    width: 90%;
+    padding: 0.6rem;
+    border-radius: 0.3125rem;
+}
+
+.Campo input:focus {
+    border-color: black ;
+    outline: none;
+}
+
+.Campo label{
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: white;
+}
+
+.CampoMensaje{
+    justify-content: left;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.CampoMensaje textarea {
+    padding: 0.5rem;
+    width:88%;
+    min-height: 4rem;
+    border-radius: 0.3125rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.BotonTipo2 button {
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border:none;
+    border-radius: 0.3125rem;
+    background-color: white;
+    align-self: center;
+    margin: 20px 0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.BotonTipo2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.BotonTipo2 button:hover { 
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+/* Responsive - Registro */
+@media (max-width: 768px){
+   .TituloSoporte {
+        padding: 0 0 0 2rem;
+        height: 10rem;
+        z-index: 2;
+    }
+
+    .TituloSoporte h2 {
+        font-size: 3rem;
+    }
+
+    .HeaderSoporte h3 {
+    padding: 0rem 2rem;
+    font-size: 2rem;
+    }
+
+    .HeaderSoporte {
+        height: 6.5rem;
+    }
+
+    .LinksContainer{
+        padding-left: 1rem;
+        gap: 0rem;
+        flex-wrap: wrap;
+    }
+
+    .Link {
+        font-family: 'Abel';
+        font-size: 32px;
+        width: 70%;
+    }
+
+    .MasAyudaContainer {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .MasAyudaContainerTexto {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .MasAyudaContainerTexto p {
+        font-size: 2rem;
+    }
+
+    .FormContactanos {
+        border: 1px solid black;
+    }
+
+    .ContactanosCuadro h3{
+        font-size: 2rem;
+    }
+}
+
+/* FIN seccion Registro */
