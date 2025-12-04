@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css"> 
+    <link rel="stylesheet" href="styles/style-soporte.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyonai - Soporte</title>
@@ -53,21 +54,39 @@
                     <img src="assets/images/felixpixel.png" alt="">
                 </div>
             </div>
+            <hr>
             <div class="MasAyudaContainer">
                 <div class="MasAyudaContainerTexto">
-                    <span></span>
                     <p>¿Necesitas más ayuda? Comunícate con nosotros</p>
-                    <span></span>
                 </div>
-                <form action="" class="ContactanosCuadro">
-                    <h3>CONTÁCTENOS</h3>
-                    <input type="text" required minlength="3" placeholder="Ingresa tu nombre">
-                    <input type="email" required placeholder="Ingresa una dirección de correo válida">
-                    <textarea id="mensaje" required placeholder="Escribe tu mensaje aquí... "></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+                <div class="ContactanosCuadro">
+                    <h3>CONTÁCTANOS</h3>
+                        <form onsubmit="return MensajeConfirmacion(event);">
+                            <div class="Campo">
+                                <label for="NombreUsuario">Nombre</label>
+                                <input type="text" id="nombre-usuario" placeholder="Ingrese su nombre de usuario" required>
+                            </div>
+
+                            <div class="Campo">
+                                <label for="Email">Email</label>
+                                <input type="email" id="email" placeholder="Ingrese su email" required>
+                            </div>
+
+                            <div class="Campo">
+                                <label for="Mensaje">Mensaje</label>
+                            </div>
+                            <div class="CampoMensaje">
+                                <textarea required placeholder="Escribe tu mensaje aquí... "></textarea>
+                            </div>
+                            
+                            <div class="BotonTipo2">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                </div>
             </div>
         </section>
+        <script src="scripts/Contacto.js"></script>
 
         <!--SECCION FOOTER-->
         <section class="footerSoporte">
