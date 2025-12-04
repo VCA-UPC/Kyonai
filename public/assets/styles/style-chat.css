@@ -1,0 +1,584 @@
+@font-face {
+
+    font-family: 'Federant Regular';
+    src: url('../Federant-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fa-solid{
+    color: white;
+    font-size: 4rem;
+    margin-right: 2.5rem;
+}
+
+.Titulo-horizontal {
+    padding: 2rem 1.25rem 2rem 3.125rem;
+    max-height: 6rem;
+    background-color: #5b61b2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    position:static;
+}
+
+.Titulo-horizontal h1 {
+    color: white;
+    font-size: 6rem;
+    margin: 0rem;
+    font-family: 'Federant Regular';
+}
+
+.Chat-general {
+    display: flex;
+    height: 100%;
+}
+
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
+}
+
+.Menu-vertical-videojuego-tipo1{
+    background-color: #7179e5;
+    width: 100%;
+    max-width: 15rem;
+    height: 100%;
+    min-height: 47rem;
+    margin: 0rem;
+    text-align: left;
+}
+
+.Menu-vertical-videojuego-tipo1 uL {
+    padding-left: 0rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li {
+    list-style: none;
+    margin-left: 0rem;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li:hover {
+    background-color: #5b61b2;
+    border: 0.5px solid black;
+}
+
+.Menu-vertical-videojuego-tipo2{
+    background-color: #6da0e1;
+    width: 100%;
+    max-width: 15rem;
+    height: 100%;
+    min-height: 47rem;
+    border: 0.5px solid black;
+}
+
+.Subtitulo {
+    display: flex;
+    text-align: center;
+    padding: 0.8rem 0rem 0.8rem 0.5rem;
+    background-color: rgba(217, 217, 217, 1);
+    border: 0.5px solid black;
+    position: sticky;
+    top:0;
+}
+
+#icono-users{
+    font-size: 2rem;
+    color: black;
+    margin: 0.2rem 0rem 0rem 0.2rem;
+}
+
+.Lista-Amigos{
+    overflow: scroll;
+    height: 100%;
+    height: 100%;
+    min-height: 42.5rem;
+}
+
+.Subtitulo h2 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.Amigo {
+    display: flex;
+    padding: 0.1rem 1rem 0.5rem 1.5rem;
+    line-height: 0.5rem;
+    margin: 0rem;
+    align-items: center;
+}
+
+.fa-circle{
+    font-size: 2rem;
+    padding: 0.8rem 0.5rem 0.4rem 0rem;
+    margin: 0rem;
+    height: 100%;
+}
+
+.Amigo h4 {
+    font-size: 1.3rem;
+    line-height: 0.6rem;
+
+}
+
+.Amigo:hover{
+    background-color: #2f80e4;
+    border: 1px solid black;
+}
+
+.Amigo.active{
+    background-color: #2f80e4;
+    border: 1px solid black;
+}
+
+.Menu-vertical-videojuego-tipo2 h2{
+    color: black;
+}
+
+.Chat-cuadro-general {
+    background-color: rgb(222, 194, 219, 0.8);
+    height: 100%;
+    min-height: 47rem;
+    width: 100%;
+    margin-top: 0rem;
+}
+
+.Chat-usuario {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    border-bottom: 2px solid #5b61b2;
+    width: 90%;
+    margin: 2rem auto 0rem auto;
+}
+
+.Chat-usuario h2{
+    font-size: 2rem;
+    padding: 0rem;
+}
+.Chat-usuario > .fa-circle {
+    margin-left: 1rem;
+}
+
+.Chat-medidas {
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 44rem;
+    justify-items: center;
+}
+
+
+/* Para la seccion de mensajes */
+.Mensajes {
+    background-color: aliceblue;
+    width: 90%;
+    height: 100%;
+    min-height: 30rem;
+    margin: 0rem 1.5rem auto;
+    border: 1px solid black;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    gap:0.1rem;
+}
+
+.mensaje.enviado {
+    background-color: white;
+    color: black;
+    max-width: 70%;
+    padding: 0.8rem 1rem;
+    margin: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    align-self: flex-end;/*Derecha*/
+}
+
+.mensaje.recibido {
+    background-color: #5b61b2;
+    color: white;
+    max-width: 70%;
+    padding: 0.8rem 1rem;
+    margin: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    align-self: flex-start; /*Izquierda*/
+}
+
+/* Fin de Mensajes */
+
+
+.Mensajes h5{
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.Cuadro-texto {
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    min-height: 3.5rem;
+    border: 1px solid black;
+    display: flex;
+}
+
+.Cuadro-texto input{
+    width: 90%;
+    height: 85%;
+    text-align: right;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    border: none;
+    outline: none;
+}
+
+#icono-stickers {
+    padding: 0.8rem 1rem 0.2rem 0.2rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    background-color: white;
+}
+
+.fa-regular {
+    background-color:skyblue;
+    padding: 0.8rem 1rem 0.2rem 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.fa-regular:hover{
+    cursor: pointer;
+}
+
+.Formulario-crear-grupo-general{
+    background-color:white;
+    flex-wrap: wrap;
+    height: 100%;
+    max-height: 32rem;
+    width: 70%;
+    border: 1px solid black;
+    margin: 1.5rem;
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+}
+
+.head-formulario-crear-grupo{
+    padding-left: 2rem;
+    background-color:rgba(237, 226, 224, 1);
+    padding: 0.2rem;
+    padding-left: 1.5rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.Formulario-crear-grupo{
+    width: 100%;
+    height: 100%;
+    max-height: 24.5rem;
+    text-align: center;
+    margin-left:1rem;
+    
+}
+
+.Campo{
+    display: flex;
+    gap: 0.5rem;
+    width: 80%;
+    max-width: auto;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+    margin-left: 1rem;
+}
+
+.Campo label{
+    font-size: 1.7rem;
+    padding: 0.2rem;
+}
+
+.Campo input{
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.Botontipo3 {
+    text-align: right;
+    width: 100%;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0rem;
+}
+
+.Botontipo3 button{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #5b61b2;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+    border-radius: 0.3125rem;
+}
+
+
+/* Seccion Responsive en Horizontal */
+
+@media (max-width: 800px){
+    .fa-solid{
+    color: white;
+    font-size: 3rem;
+    margin-right: 1rem;
+    }
+    
+    .Titulo-horizontal{
+        height: 1.6rem;
+    }
+
+    .Titulo-horizontal h1{
+        font-size: 3.7rem;
+    }
+
+    .Chat-general{
+        max-height: 16.5rem;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar botón hamburguesa en móviles */
+        color: black;
+        background-color: #7179e5;
+        width: 3rem;
+        margin: 0rem;
+    }
+
+    .Menu-vertical-videojuego-tipo1 {
+        display: none;
+        left:0;
+        max-width: 14rem;
+        min-height: 16.5rem;   
+    }
+
+    .Menu-vertical-videojuego-tipo1.active {
+        display: flex;
+        left:0;
+        width: 45%;
+        font-size: 0.1rem;
+    }
+
+    .Menu-vertical-videojuego-tipo1 li {
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .Menu-vertical-videojuego-tipo1 li a {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    
+    .Menu-vertical-videojuego-tipo2{
+        width: 55%;
+        max-width: 14rem;
+        min-height: 10rem; 
+        max-height: 16.5rem; 
+    }
+    
+    .Lista-Amigos{
+       min-height: 10rem; 
+        max-height: 13.8rem; 
+    }
+
+    #icono-users{
+        font-size: 1.3rem;
+        color: black;
+        margin: 0.5rem 0rem 0rem 0.2rem;
+    }
+
+    .Subtitulo {
+        padding: 0.2rem;
+    }
+
+    .Subtitulo h2 {
+        font-size: 1rem;
+    }
+
+    .Amigo {
+        padding: 0rem;
+        padding-left: 0rem;
+        padding-top: 0.5rem;
+        margin-top: 0rem;
+        line-height: 0rem;
+    }
+
+    .fa-circle{
+        font-size: 1.5rem;
+        padding: 0.5rem 0rem 0.5rem 1rem;
+    }
+
+    .Amigo h4{
+        font-size: 1rem;
+    }
+
+    .Chat-cuadro-general{
+        min-height: 15rem; 
+        max-height: 18rem; 
+        margin: 0rem;
+    }
+    
+    .Chat-medidas{
+        min-height: 15.5rem; 
+    }
+
+    .Chat-usuario {
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        border: 1px solid black;
+        border-bottom: 2px solid #5b61b2;
+        width: 90%;
+        margin: 1rem 0.3rem 0rem 0.3rem;
+        padding: 0.2rem 0rem 0.1rem 0rem;
+        height: 2rem;
+        
+    }
+
+    .Chat-usuario h2 {
+        font-size: 1rem;
+    }
+    .Chat-usuario > .fa-circle{
+        margin-left: 0.1rem;
+        padding: 1rem 0rem 0.5rem 0.5rem;
+    }
+
+    .Mensajes{
+        min-height: 9.6rem;
+        padding-top: 0rem;
+        margin: 0rem 0.3rem 0.5rem 0.3rem;
+    }
+
+    .Mensajes h5{
+        padding: 0rem;
+        padding-left: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .fa-regular {
+        padding: 0.5rem 0.8rem 0.2rem 0.8rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #icono-stickers{
+        background-color: white;
+        font-size: 1.5rem;
+        padding: 0.4rem 0.8rem 0.2rem 0rem;
+    }
+
+    .Cuadro-texto{
+        max-height: 2.5rem;
+        min-height: 2rem;
+        align-items: center;
+    }
+
+    .Cuadro-texto input{
+        padding: 0.3rem;
+        margin-top: 0.1rem;
+        font-size: 1rem;
+    }
+
+    .Formulario-crear-grupo-general{
+        height: 100%;
+        max-height: 14.5rem;
+        width: 90%;
+        margin: 1rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .head-formulario-crear-grupo{
+        padding: 0.1rem;
+        padding-left: 1rem;
+        border: 1px solid black;
+        margin-bottom: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .Formulario-crear-grupo{
+        min-height: 15rem;
+        max-height: 15rem;
+        text-align: center;
+        margin-left:0.1rem;
+    }
+
+    .Campo{
+        display: flex;
+        gap: 0.1rem;
+        width: 80%;
+        padding: 0.4rem;
+        margin-left: 0.5rem;
+        align-items: center;
+    }
+
+    .Campo label{
+        font-size: 1rem;
+        padding: 0.1rem;
+    }
+ 
+    .Campo input{
+        padding: 0.3rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .Botontipo3 {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .Botontipo3 button{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-right: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mensaje.enviado {
+        max-width: 70%;
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.8rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+        align-self: flex-end;
+    }
+
+    .mensaje.recibido {
+        background-color: #5b61b2;
+        color: white;
+        max-width: 70%;
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.8rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+        align-self: flex-start; /*Izquierda*/
+    }
+
+    /* Fin de Mensajes */
+
+}

@@ -37,12 +37,10 @@
         </div>
         <!--Menu vertical Lista de Amigos-->
         <div class="Menu-vertical-videojuego-tipo2">
-            
             <div class="Subtitulo">
                 <i class="fa-solid fa-users" id="icono-users"></i>
                 <h2>Lista de Amigos</h2>
             </div>
-
             <div class="Lista-Amigos">
                 <div class="Amigo">
                     <i class="fa-solid fa-circle" style="color: #FFD43B;"></i>
@@ -79,21 +77,32 @@
             </div>
         </div>
         <!-- Chat cuadro especificamente -->
-        <div class="Chat-cuadro-general">
-            <div class="Chat-medidas">
-                <div class="Chat-usuario">
-                    <i class="fa-solid fa-circle" style="color: #FFD43B;"></i>
-                    <h2>NoobxSiempre</h2>
+         <!-- Aqui empezar los cambios -->
+         <div class="Chat-cuadro-general">
+            <div class="Formulario-crear-grupo-general">
+                <div class="head-formulario-crear-grupo">
+                    <h1>Detalles del Nuevo Grupo</h1>
                 </div>
-                <div class="Mensajes" id="mensajes-container"></div>
-                
-                <div class="Cuadro-texto">
-                    <i class="fa-regular fa-note-sticky" id="icono-stickers"></i>
-                    <input type="text" id="input-mensaje" placeholder="Escriba aqui su mensaje">
-                    <i class="fa-regular fa-paper-plane" id="btn-enviar"></i>
+                <div class="Formulario-crear-grupo">
+                    <form>
+                        <div class="Campo">
+                            <label for="Nom-grupo">Nombre: </label>
+                            <input type="text" id="nom-grupo" name="email" placeholder="Ingrese el nombre del grupo" required>
+                        </div>
+                        <div class="Campo">
+                            <label for="descripcion-grupo">Descripcion: </label>
+                            <input type="text" id="descr-grupo" name="email" placeholder="Ingrese una descripcion (opcional)" >
+                        </div>
+                        <div class="Campo">
+                            <label for="integrantes">Integrantes: </label>
+                        </div>
+                        <div class="Botontipo3">
+                            <button type="button" onclick="MostrarNuevoGrupo()">Crear</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
+         </div>
 
     </section>
     <script src="scripts/Chat-menu-hamburgesa.js"></script>
