@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style-chat.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyonai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="Titulo-horizontal">
+        <div class="Regresar">
+            <a href="Simulacion.html">
+                <i class="fa-solid fa-play fa-flip-horizontal"></i>
+            </a>
+        </div>
+        <div class="Chat-titulo">
+            <h1>Chat</h1>
+        </div>
+    </section>
+    <!--Seccion General del Chat -->
+    <section class="Chat-general">
+        <!-- Menu vertical Lista de Opciones -->
+        
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+          &#9776;
+        <!-- Ícono de hamburguesa -->
+        </button>
+        
+        <div class="Menu-vertical-videojuego-tipo1">
+            <ul>
+                <li><a href="chat-principal.html">Amigos</a></li>
+                <li><a href="chat-grupo.html">Grupos</a></li>
+                <li><a href="chat-crear-grupo.html">Crear Grupo</a></li>
+            </ul>
+        </div>
+        <!--Menu vertical Lista de Amigos-->
+        <div class="Menu-vertical-videojuego-tipo2">
+            <div class="Subtitulo">
+                <i class="fa-solid fa-users" id="icono-users"></i>
+                <h2>Lista de Amigos</h2>
+            </div>
+            <div class="Lista-Amigos">
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #FFD43B;"></i>
+                    <h4>NoobxSiempre</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #63E6BE;"></i>
+                    <h4>Kendo7200</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #B197FC;"></i>
+                    <h4>Chopper</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #d85f0e;"></i>
+                    <h4>Yona</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #ee177e;"></i>
+                    <h4>Poyo</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #05e108;"></i>
+                    <h4>LordToro</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #e60abe;"></i>
+                    <h4>JimenitaPro</h4>
+                </div>
+                <div class="Amigo">
+                    <i class="fa-solid fa-circle" style="color: #ee177e;"></i>
+                    <h4>Wafer</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Chat cuadro especificamente -->
+         <!-- Aqui empezar los cambios -->
+         <div class="Chat-cuadro-general">
+            <div class="Formulario-crear-grupo-general">
+                <div class="head-formulario-crear-grupo">
+                    <h1>Detalles del Nuevo Grupo</h1>
+                </div>
+                <div class="Formulario-crear-grupo">
+                    <form>
+                        <div class="Campo">
+                            <label for="Nom-grupo">Nombre: </label>
+                            <input type="text" id="nom-grupo" name="email" placeholder="Ingrese el nombre del grupo" required>
+                        </div>
+                        <div class="Campo">
+                            <label for="descripcion-grupo">Descripcion: </label>
+                            <input type="text" id="descr-grupo" name="email" placeholder="Ingrese una descripcion (opcional)" >
+                        </div>
+                        <div class="Campo">
+                            <label for="integrantes">Integrantes: </label>
+                        </div>
+                        <div class="Botontipo3">
+                            <button type="button" onclick="MostrarNuevoGrupo()">Crear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+         </div>
+
+    </section>
+    <script src="scripts/Chat-menu-hamburgesa.js"></script>
+</body>
