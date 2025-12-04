@@ -29,6 +29,10 @@
         <div class="TituloRegistro">
             <h1>Únete a Kyonai</h1>
         </div>
+        <!--Separador-->
+        <div class="LineaSeparacionContainer">
+            <div class="LineaSeparacion"></div>
+        </div>
         <!--Seccion del formulario-->
         <section class="FormularioRegistroGeneral">
             <div class="Formulario">
@@ -37,54 +41,51 @@
                 </div>
                 <!--Formulario netamente-->
                 <div class="FormularioRegistro">
-                    <form onsubmit="return validarLogin(event);">
-                        <div class="Campo">
-                            <label for="Email">Email</label>
-                            <input type="email" id="email" placeholder="Ingrese su email" required>
+                    <div class="Campo">
+                        <label for="CorreoUsuario">Correo</label>
+                        <input type="text" id="tb-correo">
+                    </div>
+                    
+                    <div class="Campo">
+                        <label for="NombreUsuario">Nombre de Usuario</label>
+                        <input type="text" id="tb-nombre-usuario">
+                    </div>
+
+                    <div class="Campo">
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="text" id="tb-contraseña">
+                    </div>
+
+                    <!--Iconos de otras apliaciones-->
+                    <div class="MensajeOtrasFormas">
+                        <h3>Más opciones</h3>
+                    </div>
+
+                    <div class="FormasRegistro">
+                        <div class="IconoRedSocial">
+                            <a href="https://accounts.google.com/ServiceLogin?hl=es&service=mail" target="_blank">
+                                <img src="assets/images/gmail-icono.png" alt="">
+                            </a>
                         </div>
-                        
-                        <div class="Campo">
-                            <label for="NombreUsuario">Nombre de Usuario</label>
-                            <input type="text" id="nombre-usuario" placeholder="Ingrese un nombre de usuario" required>
+                        <div class="IconoRedSocial">
+                            <a href="https://www.facebook.com/login/?locale=es_LA" target="_blank">
+                                <img src="assets/images/facebook-icono.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="IconoRedSocial">
+                            <a href="https://account.apple.com/sign-in" target="_blank">
+                                <img src="assets/images/apple-icono.png" alt="">
+                            </a>
                         </div>
 
-                        <div class="Campo">
-                                <label for="password">Contraseña</label>
-                                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
-                        </div>
-
-                        <!--Iconos de otras apliaciones-->
-                        <div class="MensajeOtrasFormas">
-                            <h3>Más opciones</h3>
-                        </div>
-
-                        <div class="FormasRegistro">
-                            <div class="IconoRedSocial">
-                                <a href="https://accounts.google.com/ServiceLogin?hl=es&service=mail" target="_blank">
-                                    <img src="assets/images/gmail-icono.png" alt="">
-                                </a>
-                            </div>
-                            <div class="IconoRedSocial">
-                                <a href="https://www.facebook.com/login/?locale=es_LA" target="_blank">
-                                    <img src="assets/images/facebook-icono.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="IconoRedSocial">
-                                <a href="https://account.apple.com/sign-in" target="_blank">
-                                    <img src="assets/images/apple-icono.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Boton de registro -->
-                        <div class="BotonTipo1">
-                                <button type="Submit" class="login-button">Registrarme</button>
-                            </div>
-                        <!--Iniciar sesión-->
-                        <div class="Opciones-cuenta-general">
-                            <div class="Opciones-cuenta-texto">
-                                <p><a href="inicio-sesion.html">¿Ya tienes una cuenta?</a></p>
-                            </div>
+                    <!-- Boton de registro -->
+                     <div class="BotonTipo1">
+                        <button type="Submit">Registrarme</button>
+                    </div>
+                    <!--Iniciar sesión-->
+                    <div class="Opciones-cuenta-general">
+                        <div class="Opciones-cuenta-texto">
+                            <p><a href="inicio-sesion.html">¿Ya tienes una cuenta?</a></p>
                         </div>
                     </form>
                 </div>
