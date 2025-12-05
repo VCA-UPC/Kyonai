@@ -1,0 +1,218 @@
+@font-face {
+
+    font-family: 'Federant Regular';
+    src: url('public/assets/Federant-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: DEC1DB; 
+    margin: 0;
+    overflow: hidden; 
+}
+
+/* --- CUERPO PRINCIPAL DE LA CONSOLA --- */
+.consola-body {
+    width: 100vw;  
+    height: 100vh; 
+    background-color: #DEC1DB;
+    border-radius: 0; 
+    border: none;     
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- BARRA SUPERIOR (Oscura) --- */
+.top-bar {
+    background-color: #5B61B2; 
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 3px solid #000;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* El triángulo blanco de "atrás" */
+.back-flecha {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 20px solid white; 
+    filter: drop-shadow(-2px 0 0 #000); 
+}
+
+.logo-text {
+    font-family: 'Federant Regular'; 
+    color: white;
+    font-size: 36px; 
+    letter-spacing: 1px;
+}
+
+.top-right {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* --- ÁREA DE CONTROLES --- */
+.controles-area {
+    flex: 1; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 100px 0px; 
+    gap: 20px; 
+}
+
+/* Botones alargados pequeños */
+.pill-button {
+    width: 40px;
+    height: 12px;
+    background-color: #2F80E4;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    align-self: center; 
+}
+
+/* --- LADO IZQUIERDO --- */
+.left-controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.control-base {
+    width: 110px;
+    height: 110px;
+    background-color: #e0e0e0; 
+    border-radius: 50%;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.control-cruz {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.cruz-vertical, .cruz-horizontal {
+    background-color: #2F80E4; 
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.cruz-vertical {
+    width: 26px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cruz-horizontal {
+    width: 80px;
+    height: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cruz-center {
+    
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #2F80E4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* --- PANTALLA CENTRAL --- */
+.screen-frame {
+
+    flex: 1;       
+    height: 93%;   
+    background-color: #ffc107;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 27px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.juego-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    width: 100%;
+    height: 100%;
+}
+
+.juego-item {
+    
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    aspect-ratio: 219 / 98;
+}
+
+/* --- LADO DERECHO (Botones) --- */
+.right-controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.action-buttons {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.circulo-button {
+    width: 35px;
+    height: 35px;
+    background-color: #2F80E4; 
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Posicionamiento manual de los 3 botones */
+.circulo-button.one {
+    top: 10px;
+    left: 0px;
+}
+.circulo-button.two {
+    top: 50px;
+    left: 0px;
+}
+.circulo-button.three {
+    top: 30px;
+    right: 0px;
+}
