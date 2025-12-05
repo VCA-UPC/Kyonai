@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: 'Federant', serif;
-  background-image: url('../images/Mapa1.png');
+  background-image: url(../images/Mapa1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
