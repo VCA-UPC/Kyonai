@@ -1,0 +1,142 @@
+@font-face {
+
+    font-family: 'Federant Regular';
+    src: url('public/assets/Federant-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url(public/assets/images/image\ 7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-lateral {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 110px 1fr;
+}
+
+.columna-ajustes {
+
+    background-color: #EEE2DF;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.columna-menu{
+
+    background-color: #7CB9FF;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+}
+
+.perfil-header{
+
+    height: 120px;
+    background-color: #5B61B2;
+    border-bottom: 3px solid black;
+
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 15px;
+    color: white;
+}
+
+.avatar-box{
+
+    width: 70px;
+    height: 70px;
+    background-image: url(public/assets/images/avatar.png);
+    border: 3px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.avatar-box img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-usuario h2{
+
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Federant Regular';
+}
+
+.info-usuario p{
+
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    opacity: 0.8;
+    font-family: 'Federant Regular';
+}
+
+.area-botones{
+
+    background-color: #7CB9FF;
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.boton-menu{
+
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.1s;
+}
+
+.boton-menu:active{
+
+    transform: scale(0.95);
+}
+
+.boton-menu img{
+
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.boton-menu span{
+
+    font-family: 'Federant Regular';
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
