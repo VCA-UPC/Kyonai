@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inventario</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="Encabezado">
+      <div class="Titulo">
+        <a href="perfil.html""><i class="fa-solid fa-play fa-flip-horizontal"></i></a>
+        <h1>Inventario</h1>
+      </div>
+    </nav>
+    <section class="Sombreros">
+      <div class="Personalizar">
+        <p>Sombreros</p>
+      </div>
+    </section>
+    <section class="global">
+    <section class="items">
+      <p>Especiales</p>
+      <section class="imagenes">
+          <img src="Imagenes/sombrero1.png" class="sombrero1"/>
+          <img src="Imagenes/sombrero2.png" class="sombrero2"/>
+          <img src="Imagenes/sombrero3.png" class="sombrero3"/>
+        </div>
+      </section>
+      <p>Raros</p>
+      <section class="imagenes2">
+        <img src="Imagenes/sombrero4.png" class="sombrero4" />
+        <img src="Imagenes/sombrero5.png" class="sombrero5"/>
+        <img src="Imagenes/sombrero6.png" class="sombrero6"/>
+    </section>
+    </section>
+    <section class="Avatar">
+      <div class="avatar-contenedor">
+        <img src="Imagenes/Avatar.png" class="avatar-base" />
+        <img id="sombrero-avatar" class="avatar-sombrero" src="" />
+      </div>
+    </section>
+  </section>
+  <script>
+    const sombreroAvatar = document.getElementById("sombrero-avatar");
+  
+    const imagenesSombreros = document.querySelectorAll(
+      ".sombrero1, .sombrero2, .sombrero3, .sombrero4, .sombrero5, .sombrero6"
+    );
+  
+    imagenesSombreros.forEach(img => {
+      img.addEventListener("click", () => {
+        sombreroAvatar.src = img.src;  
+      });
+    });
+  </script>
+  </body>
+</html>
