@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Old Standart TT";
+  src: url("../Old\ Standard\ TT\ Regular\ V2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Federant Regular";
+  src: url("../Federant-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Encabezado {
+  background-color: #5b61b2;
+  padding: 0.2rem 1rem;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.Titulo h1 {
+  font-family: "Federant Regular";
+  padding-left: 2rem;
+  font-size: 55px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-weight: 900;
+}
+
+body {
+  background-image: url("Imagenes/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  min-height: 100vh;
+}
+
+.Lista-Opciones {
+  margin-top: 0;
+  background-color: #97a8ff;
+  padding: 10rem 2rem;
+  padding-top: 0.5rem;
+  padding-right: 3rem;
+  margin-left: 50px;
+  padding-bottom: 0.5rem;
+  border: 2px solid black;
+  align-items: center;
+}
+
+.Lista-Opciones p {
+  font-size: 50px;
+  font-family: "Federant Regular";
+  color: white;
+  -webkit-text-stroke: 0.8px black;
+  font-weight: 999;
+  padding-right: 5rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0px;
+}
+
+.Opciones {
+  display: flex;
+}
+
+.Avatar {
+  padding-left: 18rem;
+  padding-top: 7rem;
+}
+
+.Personalizar i,
+.Intereses i,
+.Progreso i,
+.Logros i,
+.Ajustes i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: black;
+}
+
+.Personalizar,
+.Intereses,
+.Progreso,
+.Logros,
+.Ajustes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.Cerrar-Sesion {
+  padding-top: 2rem;
+}
+
+.Cerrar-Sesion p {
+  background-color: #b25b7b;
+}
+
+.Cerrar-Sesion p a {
+  color: white;
+  text-decoration: none;
+}
+
+.Regresar {
+  display: flex;
+}
+
+.fa-play {
+  color: #5b62b3;
+  margin: 0px;
+}
+
+.Regresar a i {
+  display: inline-block;
+  padding: 3.7rem 1rem;
+  width: auto;
+  height: auto;
+}
+
+.Editar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #97a8ff;
+  border: 2px solid black;
+}
+
+.Editar p {
+  font-size: 35px;
+  font-family: "Federant Regular";
+  color: white;
+  -webkit-text-stroke: 0.8px black;
+  font-weight: 999;
+}
+
+.fa-regular {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+.Contenido {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.mini-avatar {
+  width: 70px;
+  height: 90px;
+  border: 2px solid black;
+}
+
+.lb-imagen {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.lb-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.contenido-oculto {
+  display: none;
+}
+
+.contenido-visible {
+  display: block;
+}
+
+.titulo-intereses {
+  font-size: 30px;
+}
+
+.chips {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.chip {
+  font-size: 30px;
+  color: #eee2df;
+}
+
+.buscador {
+  font-size: 20px;
+}
+
+.fa-magnifying-glass {
+  font-size: 28px;
+}
+
+.fa-xmark {
+  color: #eee2df;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .Opciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Lista-Opciones {
+    width: 95%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .Lista-Opciones p {
+    font-size: 25px;
+    padding-right: 1rem;
+  }
+
+  .Avatar {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Avatar img {
+    width: 120px;
+    height: auto;
+  }
+
+  .Editar p {
+    font-size: 20px;
+  }
+
+  .fa-regular {
+    font-size: 22px;
+  }
+
+  .Personalizar i,
+  .Intereses i,
+  .Progreso i,
+  .Logros i,
+  .Ajustes i {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .Contenido,
+  .ContenidoIntereses {
+    padding-left: 1rem;
+  }
+
+  .chips {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chip {
+    font-size: 16px;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .fa-xmark {
+    font-size: 16px;
+  }
+  .buscador {
+    font-size: 16px;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 18px;
+  }
+  .Regresar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .Regresar a i {
+    padding: 0.5rem;
+    font-size: 22px;
+  }
+
+  .Regresar p {
+    margin: 0;
+    font-size: 20px;
+  }
+}
