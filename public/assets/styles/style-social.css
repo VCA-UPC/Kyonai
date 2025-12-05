@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Federant';
+  src: url('Federant-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'Federant', serif;
+  background-image: url('../images/Mapa1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #111;
+}
+
+/* caja principal transparente */
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* << permite controlar posición real */
+  gap: 22px;                     /* << separa flecha - título - buscador */
+  background: #5f5fb6;
+  padding: 14px 18px;
+  border-bottom: 3px solid rgba(0,0,0,0.35);
+  box-shadow: inset 0 -6px 0 rgba(0,0,0,0.08);
+  border-radius: 6px;
+}
+
+/* Agrupa flecha + título */
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 22px; /* controla qué tan a la derecha queda el título */
+}
+
+/* Flecha */
+.back-btn {
+  background: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+}
+
+.logo-title {
+  font-family: 'Federant', serif;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
+
+  margin-left: 24px;    
+}
+
+.search-area {
+  margin-left: auto; /* manda el buscador a la derecha */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- buscador */
+.label-search {
+  color: #f0e9f2;
+  font-size: 18px;
+}
+
+.input-search {
+  width: 270px;
+  height: 34px;
+  border-radius: 10px;
+  border: none;
+  padding: 6px 10px;
+  font-family: 'Federant', serif;
+  font-size: 16px;
+}
+
+/* contenido central (paneles) */
+.content {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 32px;
+  margin-top: 22px;
+  align-items: start;
+}
+
+/* panel rosado */
+.panel {
+  background: rgba(245, 226, 235, 0.95);
+  padding: 18px;
+  border-radius: 12px;
+  border: 4px solid rgba(0,0,0,0.35);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+}
+
+.panel h2 {
+  font-family: 'Federant', serif;
+  font-size: 26px;
+  margin: 6px 0 14px 0;
+  color: #231a1a;
+}
+
+/* --- Solicitudes --- */
+.req-list { display: flex; flex-direction: column; gap: 10px; }
+
+.req-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #7fb6ff;
+  border: 3px solid rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* círculo principal */
+.avatar-circle,
+.rec-select {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 4px solid rgba(0,0,0,0.35);
+  min-width: 52px;
+  cursor: pointer;
+  transition: transform .12s, background .12s;
+}
+
+/* SELECCION COMPLETAMENTE NEGRO */
+.avatar-circle.selected,
+.rec-select.selected {
+  background: #000 !important;
+  border-color: #000;
+  transform: scale(0.97);
+}
+
+/* texto */
+.req-text { flex: 1; }
+.req-name { font-size: 18px; color: #06223b; }
+.req-code { font-size: 14px; color: #06223b; opacity: 0.9; }
+
+/* acciones aceptar / rechazar */
+.req-actions { display: flex; gap: 10px; margin-left: 6px; }
+
+.btn-accept, .btn-reject {
+  background: #fff;
+  border: 3px solid rgba(0,0,0,0.5);
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background .12s, transform .12s;
+}
+
+/* cuando se selecciona: NEGRO */
+.btn-accept.selected,
+.btn-reject.selected {
+  background: #000;
+  color: #fff;
+  transform: scale(0.95);
+}
+
+/* --- recomendaciones --- */
+.rec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.rec-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #7fb6ff;
+  border: 3px solid rgba(0,0,0,0.5);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.rec-text { flex: 1; }
+.rec-name { font-size: 18px; color: #06223b; }
+.rec-code { font-size: 14px; color: #06223b; opacity: 0.95; }
+
+/* --- responsive --- */
+@media (max-width: 980px) {
+  .content { grid-template-columns: 1fr; padding: 12px; }
+  .logo-title { font-size: 36px; }
+  .input-search { width: 160px; }
+  .rec-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .logo-title { font-size: 28px; }
+  .avatar-circle { width: 44px; height: 44px; min-width: 44px; }
+  .rec-select { width: 40px; height: 40px; min-width: 40px; }
+  .top-bar { padding: 8px; }
+}
+
