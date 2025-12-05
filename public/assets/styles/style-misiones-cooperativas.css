@@ -1,0 +1,220 @@
+.contenedor-misiones {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #d8c8ff;
+    border: 1px solid black;
+}
+
+.Misiones {
+    width: 17rem;
+    background-color: #7179e5;
+    border-right: 2px solid black;
+}
+
+.Menu-vertical-videojuego-tipo1 {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.Tipos-titulo {
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Menu-vertical-videojuego-tipo1 ul {
+    padding-left: 0;
+}
+
+.Menu-vertical-videojuego-tipo1 li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.Menu-vertical-videojuego-tipo1 li a {
+    color: white;
+    text-decoration: none;
+}
+
+.Menu-vertical-videojuego-tipo1 li:hover {
+    background-color: #5b61b2;
+    border: 0.5px solid black;
+}
+
+.Misiones-general {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Titulo-horizontal {
+    background-color: #5b61b2;
+    padding: 1.5rem 3rem;
+}
+
+.Titulo-horizontal h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.Misiones-contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 100%;
+}
+
+.Misiones-contenido-items {
+    width: 72%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.Mision-item1,
+.Mision-item2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 1rem;
+    border-bottom: 2px solid #a78a72;
+    background-color: #f8eedb;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.recompensa {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.icono {
+    width: 22px;
+    height: 22px;
+}
+
+.btn-reclamar {
+    background: #6174d8;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-reclamar:hover {
+    background: #4858a9;
+}
+
+
+.Misiones-imagen {
+    width: 26%;
+    background-color: #5b61b2;
+    border: 2px solid black;
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.Misiones-imagen img {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+
+.Mision-imagen-item1 p {
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.Mision-imagen-item2 p {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.Menu-vertical-videojuego-tipo1 li.Activo {
+    background-color: #5b61b2;
+    border: 1px solid black;
+}
+
+
+/* Seccion Responsive en Horizontal*/
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .contenedor-misiones {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .Misiones {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+    
+    .Menu-vertical-videojuego-tipo1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+    
+    .Tipos-titulo {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    
+    .Menu-vertical-videojuego-tipo1 ul {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .Menu-vertical-videojuego-tipo1 li {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .Misiones-contenido {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .Misiones-contenido-items {
+        width: 100%;
+    }
+    
+    .Mision-item1,
+    .Mision-item2 {
+        min-height: 100px;
+    }
+    
+    .Misiones-imagen {
+        width: 95%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    
+    .Misiones-imagen img {
+        width: 120px;
+        height: 120px;
+    }
+}

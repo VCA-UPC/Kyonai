@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kyonai_Perfil</title>
+    <link rel="stylesheet" href="estilos-perfil.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="Encabezado">
+      <div class="Titulo">
+        <h1>Perfil</h1>
+      </div>
+    </nav>
+    <section class="Opciones">
+      <section class="Lista-Opciones">
+        <div class="Personalizar">
+          <p>Personalizar datos</p>
+          <i class="fa-solid fa-caret-down toggle"></i>
+        </div>
+
+        <div class="Contenido oculto">
+          <div class="lb-nombre">
+            <label>Nombre:</label>
+            <input type="text" />
+            <div class="icono-edit">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+          </div>
+
+          <div class="lb-imagen">
+            <label>Imagen:</label>
+            <div class="mini-avatar">
+              <img src="Imagenes/mini-avatar.png" class="mini-avatar" />
+            </div>
+          </div>
+        </div>
+        <div class="Intereses toggle-btn">
+          <p>Mis intereses</p>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+
+        <div class="ContenidoIntereses contenido-oculto">
+          <h3 class="titulo-intereses">Etiquetas seleccionadas</h3>
+
+          <div class="chips">
+            <div class="chip">
+              <span>Otaku</span>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="chip">
+              <span>Gamer</span>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="chip">
+              <span>Amante de Gatos</span>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+
+          <div class="buscador">
+            <label for="buscar">Búsqueda:</label>
+            <input type="text" id="buscar" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="Progreso">
+          <p>Progreso Social y Emocional</p>
+
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="Logros">
+          <p>Logros</p>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="Ajustes">
+          <p>Ajustes</p>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="Cerrar-Sesion">
+          <p><a href="inicio-sesion.html">Cerrar Sesión</a></p>
+        </div>
+        <div class="Regresar">
+          <a href="menu simulacion">
+            <i class="fa-solid fa-play fa-flip-horizontal"></i>
+          </a>
+          <p>Regresar</p>
+        </div>
+      </section>
+      <section class="Avatar">
+        <img src="Imagenes/Avatar.png" alt="" />
+        <div class="Editar">
+          <p>Editar Avatar</p>
+          <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+      </section>
+    </section>
+    <script>
+      document.querySelectorAll(".toggle").forEach((icono) => {
+        icono.addEventListener("click", () => {
+          const seccion = icono.parentElement.nextElementSibling;
+
+          seccion.classList.toggle("oculto");
+
+          if (seccion.classList.contains("oculto")) {
+            icono.classList.remove("fa-caret-up");
+            icono.classList.add("fa-caret-down");
+          } else {
+            icono.classList.remove("fa-caret-down");
+            icono.classList.add("fa-caret-up");
+          }
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".toggle-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const content = btn.nextElementSibling;
+
+          if (content.classList.contains("contenido-visible")) {
+            content.classList.remove("contenido-visible");
+            content.classList.add("contenido-oculto");
+          } else {
+            content.classList.remove("contenido-oculto");
+            content.classList.add("contenido-visible");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
