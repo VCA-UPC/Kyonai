@@ -1,0 +1,169 @@
+html {
+  font-size: 16px; /* Base para rem */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+   font-size: 1.188rem;
+  background: #e6c7dd;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5963b8;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  color: white;
+}
+
+.back-btn {
+  font-size: 1.888rem; /* 30px */
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(252, 252, 252);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem; /* 5px */
+}
+
+.search-box input {
+  padding: 0.3125rem; /* 5px */
+  border-radius: 0.3125rem; /* 5px */
+  border: none;
+}
+
+/* DETAILS PAGE */
+.details-container {
+  padding: 1.25rem; /* 20px */
+}
+
+/* FLEX PRINCIPAL */
+.details-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem; /* 20px */
+}
+
+/* IMAGEN */
+.details-flex img {
+  width: 34.375rem; /* 550px */
+  max-width: 100%;
+  border-radius: 0.625rem; /* 10px */
+}
+
+/* BOTÓN */
+.confirm-btn {
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  background: #9af08f;
+  border: 0.0625rem solid #4c8d4c; /* 1px */
+  border-radius: 0.3125rem; /* 5px */
+  cursor: pointer;
+}
+
+/* TEXTO + BOTÓN */
+.assist-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem; /* 15px */
+  margin-top: 0.625rem; /* 10px */
+  flex-wrap: wrap; /* responsables en pantallas pequeñas */
+   font-size: 1.4rem;
+}
+
+/* ==== MODAL CENTRADO REAL ==== */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Caja */
+#modal .modal-content {
+    background: rgb(251, 251, 251);
+    padding: 2rem;
+    width: 90%;
+    max-width: 25rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.close-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  background: #5963b8;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ---------------------- */
+/*     RESPONSIVE         */
+/* ---------------------- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 56.25rem) { /* 900px */
+  .details-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .assist-row {
+    justify-content: center;
+  }
+}
+
+/* Celulares */
+@media (max-width: 37.5rem) { /* 600px */
+  header {
+    flex-direction: column;
+    gap: 0.625rem; /* 10px */
+  }
+
+  .details-flex img {
+    width: 100%;
+  }
+
+  .assist-row {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .confirm-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
