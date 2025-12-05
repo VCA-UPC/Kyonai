@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social</title>
+
+  <link rel="stylesheet" href="./assets/styles/style-social.css">
+</head>
+<body>
+
+  <main class="page-wrapper">
+    <header class="top-bar">
+
+  <!-- Agrupamos flecha y título -->
+  <div class="left-group">
+    <button class="back-btn" aria-label="volver">◄</button>
+    <div class="logo-title">Social</div>
+  </div>
+
+  <div class="search-area">
+    <label for="buscar" class="label-search">Buscar:</label>
+    <input id="buscar" class="input-search" placeholder="">
+    <button class="btn-search" aria-label="buscar">🔍</button>
+  </div>
+</header>
+
+    <section class="content">
+      <aside class="panel solicitudes">
+        <h2>Solicitudes de Amistad</h2>
+
+        <div class="req-list">
+
+          <div class="req-row">
+            <button class="avatar-circle" aria-label="seleccionar usuario"></button>
+
+            <div class="req-text">
+              <div class="req-name">Elsa Pato</div>
+              <div class="req-code">J26N5</div>
+            </div>
+
+            <div class="req-actions">
+              <button class="btn-accept select-btn">✔</button>
+              <button class="btn-reject select-btn">✖</button>
+            </div>
+          </div>
+
+          <div class="req-row">
+            <button class="avatar-circle"></button>
+            <div class="req-text">
+              <div class="req-name">Elvis Tek</div>
+              <div class="req-code">RT5D3</div>
+            </div>
+            <div class="req-actions">
+              <button class="btn-accept select-btn">✔</button>
+              <button class="btn-reject select-btn">✖</button>
+            </div>
+          </div>
+
+          <div class="req-row">
+            <button class="avatar-circle"></button>
+            <div class="req-text">
+              <div class="req-name">Luz Clarito</div>
+              <div class="req-code">E4RY2</div>
+            </div>
+            <div class="req-actions">
+              <button class="btn-accept select-btn">✔</button>
+              <button class="btn-reject select-btn">✖</button>
+            </div>
+          </div>
+
+          <div class="req-row">
+            <button class="avatar-circle"></button>
+            <div class="req-text">
+              <div class="req-name">Kleiton</div>
+              <div class="req-code">K4L7S</div>
+            </div>
+            <div class="req-actions">
+              <button class="btn-accept select-btn">✔</button>
+              <button class="btn-reject select-btn">✖</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <article class="panel recomendaciones">
+        <h2>Recomendaciones en base a tus hobbies</h2>
+
+        <div class="rec-grid">
+
+          <div class="rec-card">
+            <button class="avatar-circle rec-select"></button>
+            <div class="rec-text">
+              <div class="rec-name">PeruvianRevenger</div>
+              <div class="rec-code">PR766</div>
+            </div>
+          </div>
+
+          <div class="rec-card">
+            <button class="avatar-circle rec-select"></button>
+            <div class="rec-text">
+              <div class="rec-name">Green_Doom</div>
+              <div class="rec-code">G34D4</div>
+            </div>
+          </div>
+
+          <div class="rec-card">
+            <button class="avatar-circle rec-select"></button>
+            <div class="rec-text">
+              <div class="rec-name">BuzzSkull</div>
+              <div class="rec-code">BS56Z</div>
+            </div>
+          </div>
+
+          <div class="rec-card">
+            <button class="avatar-circle rec-select"></button>
+            <div class="rec-text">
+              <div class="rec-name">Kamistoyer</div>
+              <div class="rec-code">KM2S3</div>
+            </div>
+          </div>
+
+          <div class="rec-card">
+            <button class="avatar-circle rec-select"></button>
+            <div class="rec-text">
+              <div class="rec-name">ZeusGod</div>
+              <div class="rec-code">ZG24F</div>
+            </div>
+          </div>
+
+          <div class="rec-card">
+            <button class="avatar-circle rec-select"></button>
+            <div class="rec-text">
+              <div class="rec-name">LordToro9</div>
+              <div class="rec-code">Y02SX</div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    function toggleSelect(button) {
+      const parent = button.closest('.panel');
+      parent.querySelectorAll('.selected').forEach(b => {
+        if (b !== button) b.classList.remove('selected');
+      });
+      button.classList.toggle('selected');
+    }
+
+    document.addEventListener('click', function(e) {
+      const t = e.target;
+
+      if (t.classList.contains('avatar-circle') ||
+          t.classList.contains('select-btn')) {
+        toggleSelect(t);
+      }
+
+      if (t.classList.contains('btn-accept')) {
+        t.closest('.req-row').style.opacity = '0.6';
+      }
+
+      if (t.classList.contains('btn-reject')) {
+        t.closest('.req-row').remove();
+      }
+    });
+  </script>
+
+</body>
+</html>
