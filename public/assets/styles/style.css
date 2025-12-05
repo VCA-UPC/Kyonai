@@ -35,66 +35,9 @@ html, body {
 
     scroll-behavior: smooth;
     height: 100%;
-    overflow-x: auto;
     background-color: #eee2df;
     margin: 0%;
-}
-
-.Encabezado {
-
-    width: 100%;
-    height: 90px;
-    position: fixed;
-    display: flex;
-    background-color: #eee2df;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 100;
-    
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-}
-
-.LogoContainer {
-
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 100px;
-}
-
-.LogoContainer a {
-
-    text-decoration: none;
-}
-
-.NombreLogo {
-
-    font-family: 'Federant Regular';
-    font-size: 36px;
-    color: black;
-}
-
-.Menu-Horizontal {
-
-    align-items: center;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    min-width: 60%;
-    padding: 0 100px;
-}
-
-.Menu-Horizontal li a {
-
-    font-size: 24px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-family: 'AbhayaLibre';
-}
-
-.Menu-Horizontal li a:hover {
-    color: #7179e5;
+    align-content: center;
 }
 
 .PortadaPrincipal {
@@ -150,7 +93,7 @@ html, body {
     background-size: cover;
     background-color: black;
 
-    box-shadow: inset 400px 0 330px rgb(222, 194, 219, 0.8);
+    box-shadow: inset 400px 0 80px rgb(222, 194, 219, 0.8);
 }
 
 .LineaSeparacionContainer {
@@ -244,7 +187,7 @@ html, body {
 
 .SeccionMapas {
 
-    margin-top: 90px;
+    margin-top: 118px;
     background-color: #eee2df;
 }
 
@@ -270,18 +213,23 @@ html, body {
 .MapasContainer {
 
     justify-self: center;
-    width: 54%;
     background-color: #eee2df;
 }
 
 .MapaTipo1, .MapaTipo2 {
+
+    
     padding: 33px 0 100px 0;
     display: flex;
+    
 }
 
 .MapaTipo1 img, .MapaTipo2 img {
 
-    width: 404px;
+    width: 100%;
+    height: 100%;
+    max-width: 449px;
+    
 }
 
 .TextoMapaTipo1 {
@@ -294,6 +242,7 @@ html, body {
 
     padding: 0 50px 0 0;
     font-size: 24px;
+    width: 50%;
 }
 
 .TextoMapaTipo1 h3, .TextoMapaTipo2 h3 {
@@ -304,9 +253,34 @@ html, body {
 .TextoMapaTipo1 p, .TextoMapaTipo2 p {
 
     font-family: 'Old Standart TT';
+    max-width: 380px;
 }
 
-.SubituloNoticias {
+.SeccionSoporte {
+
+    margin-top: 90px;
+}
+
+.TituloSoporte {
+
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 108px;
+    height: 228px;
+    background-color: #6da0e1;
+    position: relative;
+    z-index: 2;
+}
+
+.TituloSoporte h2 {
+
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 96px;
+}
+
+.HeaderSoporte {
 
     font-family: 'Abel';
     font-size: 46px;
@@ -314,11 +288,33 @@ html, body {
     align-items: center;
 }
 
-.SubituloNoticias h3 {
+.HeaderSoporte h3 {
+
+    padding: 0 35px;
+}
+
+.HeaderSoporte span {
+
+    display: inline-block;
+    height: 43px;
+    flex: 1;
+    background-color: #6da0e1;
+}
+
+.SubtituloNoticias {
+
+    font-family: 'Abel';
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.SubtituloNoticias h3 {
+
     padding: 0 35px 0 120px;
 }
 
-.SubituloNoticias span {
+.SubtituloNoticias span {
 
     margin-right: 120px;
     display: inline-block;
@@ -339,19 +335,28 @@ html, body {
 .SeccionNosotros {
 
     margin: 40px 120px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 
-.TextoNosotros {
+.TituloNosotros {
 
-    width: 50%;
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.TextoNosotros h2 {
+.TituloNosotros h2 {
 
     font-family: 'AbhayaLibre';
     margin: 0;
     font-size: 73px;
+}
+
+.TextoNosotros {
+
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .TextoNosotros p {
@@ -361,9 +366,10 @@ html, body {
     line-height: 1.7;
 }
 
-.SeccionNosotros .ImagenContainer {
+.ImagenNosotros {
 
-    width: 50%;
+    grid-column: 2 / span 1; /* Ocupa ambas filas */
+    grid-row: 1 / span 2;
     height: 600px;
     background-image: url(../images/QuienesSomos.png);
     background-position: center;
@@ -377,6 +383,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #dec1db;
     font-family: 'Abel';
     font-size: 18px;
@@ -388,6 +395,7 @@ html, body {
 }
 
 .footerSoporte {
+
     background-color: #2f80e4;
 }
 
@@ -405,13 +413,12 @@ html, body {
     justify-content: center;
     max-width: 48px;
     border-radius: 5px;
-    background-color: #968093;
+    background-color: #eee2df;
 }
 
 .Logo img {
 
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 5vh;
 }
 
 .footerPrincipal .LogoContainer, .footerMapa .LogoContainer, .footerSoporte .LogoContainer {
@@ -442,7 +449,16 @@ html, body {
     margin: 20px 37px;
 }
 
+.HerramientasSoporteContainer {
+
+    padding: 0 300px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
 .Link a {
+
     display: flex;
     justify-content: space-between; /* texto a la izquierda, flecha a la derecha */
     align-items: center; /* centra verticalmente */
@@ -453,12 +469,99 @@ html, body {
     padding: 0 13px;
     border-radius: 15px;
     transition: 0.3s;
+    
 }
 
 .Link a:hover {
 
     background-color: #5b61b2;
     transform: scale(1.1);
+}
+
+.Link {
+
+    font-family: 'Abel';
+    font-size: 32px;
+    margin: 50px;
+}
+
+
+
+.Link img {
+
+    justify-self: right;
+    transform: rotate(45deg);
+    margin: 0 12px;
+    width: 52px;
+    height: 52px;
+}
+
+.FelixContainer {
+
+    max-width: 340px;
+    max-height: 510px;
+}
+
+.FelixContainer img {
+
+    width: 100%;
+}
+
+.MasAyudaContainer {
+
+    display: flex;
+    height: 595px;
+    margin-bottom: 40px;
+}
+
+.MasAyudaContainerTexto {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;    
+    width: 50%;
+    justify-content: center;
+}
+
+.MasAyudaContainerTexto p {
+
+    font-family: 'AbhayaLibre';
+    line-height: 6rem;
+    margin: 15px 0;
+    padding: 0px 80px;
+    text-align: center;
+}
+
+.MasAyudaContainerTexto span {
+
+    display: block;
+    background-color: #2f80e4;
+    height: 20px;
+}
+
+.ContactanosCuadro {
+
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: #2f80e4;
+}
+
+.ContactanosCuadro h3 {
+
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    margin: 40px 0 10px 0;
+}
+
+.ContactanosCuadro input {
+
+    margin: 20px 124px;
+    height: 50px;
+    font-size: 20px;
 }
 
 input::placeholder {
@@ -468,6 +571,7 @@ input::placeholder {
 }
 
 #mensaje {
+
     margin: 20px 124px;
     height: 150px;
     padding: 10px;
@@ -477,26 +581,219 @@ input::placeholder {
 }
 
 #mensaje::placeholder {
+
     font-family: 'AbhayaLibre';
 }
 
+.ContactanosCuadro button {
 
-/* Seccion Responsive General */
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: white;
+    align-self: center;
+    margin: 20px 0;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.ContactanosCuadro button:hover {
+
+    
+    transform: scale(1.1);
+    color: white;
+    background-color: #5b61b2;
+}
+
+/* Estilos para Registro */
+
+.TituloRegistro {
+    padding: 100px 20px 0px 50px;
+    max-height: 228px;
+    background-color: #5b61b2;
+    position: relative;
+    height: 100%;
+}
+
+.TituloRegistro {
+    color: white;
+    font-size: 48px;
+}
+
+.FormularioRegistroGeneral {
+    background-color:#eee2df;
+    padding: 40px;
+    padding-top:50px;
+    border: 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Formulario {
+    justify-content: center;
+    background-color: #5b61b2;
+    padding: 30px;
+    border : 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.FormularioTitulo {
+    text-align: center;
+}
+
+.FormularioTitulo h2 {
+    font-size: 30px;
+}
+
+.Formulario h2 {
+    color: white;
+}
+
+.Campo{
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.FormularioRegistro label{
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: white;
+}
+
+.FormularioRegistro input[type="text"] {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 30px;
+}
+
+.MensajeOtrasFormas {
+    padding-left: 10px;
+    color: white;
+}
+
+.FormularioRegistro button {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.FormasRegistro {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.IconoRedSocial img {
+    width: 100%;
+    max-width:80px;
+    height: 100%;
+    max-height:45px;
+}
+
+.BotonTipo1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+header {
+
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box  ;
+    /* background-color: #eee2df; */
+    background-color: #eee2df;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.logo {
+
+    max-width: 5rem;
+    font-size: 2.75rem;
+    text-decoration: none;
+    font-family: 'Federant Regular';
+    font-weight: normal;
+    color: black;
+}
+
+.logo p {
+
+    margin: 0;
+}
+
+.nav-list {
+
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'AbhayaLibre';
+}
+
+.abrir-menu, 
+.cerrar-menu {
+    display: none;
+}
+
+/* ===============================
+        Estilos Responsivos
+   =============================== */
+
+@media (max-width: 480px) {
+
+    .NoticiasContainer {
+
+        padding: 20px;
+    }
+
+    .Noticia img {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .SeccionMapas {
+
+    margin-top: 118px;
+    background-color: #eee2df;
+}
+    
+}
+
 @media (max-width: 768px) {
-    .Menu-Horizontal {
-        display: none;
-    }
-    .Encabezado {
-        justify-content: center;
-    }
-    .LogoContainer {
-        padding: 0;
-    }
+
     .PortadaPrincipal {
         padding: 70px 0 0 0;
     }
     .LineaSeparacionContainer {
         padding: 0 0 0 0;
+        visibility: hidden;
     }
     .TextoPortada {
         padding: 0;
@@ -506,7 +803,281 @@ input::placeholder {
         box-shadow:inset 0 0 800px 200px rgba(222, 194, 219, 0.8);
         justify-items: center;
     }
+
+    .abrir-menu, .cerrar-menu {
+        
+        max-width: 50px;
+        max-height: 50px;
+        display: block;
+        border: 0;
+        padding: 0;
+        font-size: 2.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav {
+    
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5b61b2;
+    padding: 2rem;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(110%);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
 
+    .nav-list {
+
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+    }
+
+    .nav-list li a {
+
+        color: #eee2df;
+    }
+
+/* ==========================
+Seccion noticias recientes
+========================== */
+
+.SubtituloNoticias {
+
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.SubtituloNoticias h3 {
+
+    font-size: 32px;
+    padding: 0;
+    text-align: center;
+}
+
+.SubtituloNoticias span {
+
+    display: none;
+}
+
+.Division {
+
+        margin: 0;
+    }
+
+    /* ================
+SECCION NOSOTROS
+================ */
+    
+    .SeccionNosotros {
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.TituloNosotros {
+
+    margin-top: 25px;
+    order: 1;
+    
+}
+
+.TituloNosotros h2 {
+
+    text-align: center;
+    font-family: 'AbhayaLibre';
+    margin: 0;
+    font-size: 36px;
+}
+
+.TextoNosotros {
+
+    order: 3;
+    margin: 10px;
+}
+
+.TextoNosotros p {
+
+    font-family: 'Abel';
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.ImagenNosotros {
+
+    order: 2;
+    height: 340px;
+    width: auto;
+    background-image: url(../images/QuienesSomos.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/* ==============
+SECCION NOTICIAS
+================ */
+
+
+.TituloNoticias {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 180px;
+    background-color: #6da0e1;
+    z-index: 2;
+}
+
+.TituloNoticias h2 {
+
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 10vw;
+}
+
+/* =============
+SECCION MAPAS
+============= */
+
+.TituloMapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 180px;
+    background-color: #6da0e1;
+    z-index: 2;
+}
+
+.TituloMapas h2 {
+    font-weight: 100;
+    font-family: 'Old Standart TT';
+    color: white;
+    font-size: 10vw;
+}
+
+/* Contenedor general */
+.MapasContainer {
+    background-color: #eee2df;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Cada mapa + texto */
+.MapaTipo1,
+.MapaTipo2 {
+    width: 100%;
+    padding: 33px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MapaTipo2 img{
+
+    order: 1;
+}
+
+.TextoMapaTipo2 {
+
+    order: 2;
+}
+
+/* Imagen responsive */
+.MapaTipo1 img,
+.MapaTipo2 img {
+    width: 90%;
+    max-width: 28rem;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Contenedor del texto */
+.TextoMapaTipo1,
+.TextoMapaTipo2 {
+    width: 90%;
+    max-width: 37.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.TextoMapaTipo1 h3,
+.TextoMapaTipo2 h3 {
+    font-family: 'Federant Regular';
+    margin-bottom: 0.5rem;
+}
+
+.TextoMapaTipo1 p,
+.TextoMapaTipo2 p {
+    font-family: 'Old Standart TT';
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+    /* ================
+SECCION FOOTER
+================ */
+
+.TerminosCondicionesTexto {
+
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===============
+SECCION SOPORTE
+=============== */
+
+
+
+}
+
+@media (max-width: 1450px) {
+
+    /* 
+    ===================
+    NOTICIAS RESPONSIVO
+    ===================
+    */
+
+    .NoticiasContainer {
+
+        flex-wrap: wrap;
+        gap: 1.875rem;
+        justify-content: center;
+    }
+
+
+
+
+}
