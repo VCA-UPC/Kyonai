@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="public/assets/styles/style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Kyonai</title>
 </head>
     <body>
-        <!--Encabezado de la pagina-->
-        <nav class="Encabezado">
-            <div class="LogoContainer">
-                <a href="index.html">
-                    <span class="NombreLogo">Kyonai</span>
-                </a>
-            </div>
-            <ul class="Menu-Horizontal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="public/noticias.html">Noticias</a></li>
-                <li><a href="public/mapas.html">Mapas</a></li>
-                <li><a href="public/soporte.html">Soporte</a></li>
-                <li><a href="public/registro.html">Regístrate</a></li>
-                <li><a href="">Simulación</a></li>
-            </ul>
-        </nav>
+        <header>
+            <a href="index.html" class="logo">
+                    <p>Kyonai</p>
+            </a>
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="public/noticias.html">Noticias</a></li>
+                    <li><a href="public/mapas.html">Mapas</a></li>
+                    <li><a href="public/soporte.html">Soporte</a></li>
+                    <li><a href="public/registro.html">Regístrate</a></li>
+                    <li><a href="">Simulación</a></li>
+                </ul>
+            </nav>
+        </header>
         <section class="PortadaPrincipal">
             <div class="Portada">
                 <div class="TextoPortada">
@@ -36,10 +41,9 @@
         <div class="LineaSeparacionContainer">
             <div class="LineaSeparacion"></div>
         </div>
-
-        <!--Seccion de soporte-->
+        <!--Seccion de Noticias-->
         <section class="NoticiasRecientes">
-            <div class="SubituloNoticias">
+            <div class="SubtituloNoticias">
                 <h3>Noticias más recientes</h3>
                 <span></span>
             </div>
@@ -84,12 +88,11 @@
             <span class="Division"></span>
         </section>
         <section class="SeccionNosotros">
+            <div class="TituloNosotros"><h2>SOMOS KYONAI</h2></div>
             <div class="TextoNosotros">
-                <h2>SOMOS KYONAI</h2>
                 <p>Kyonai es un mundo virtual gratuito para jóvenes que desean hacer amigos sin presión. A través de minijuegos y exploración virtual, puedes formar lazos desde casa. Nuestro objetivo es que estas amistades sean tan reales que te sientas cómodo para un encuentro seguro en la vida real, usando los mismos lugares que exploraron juntos en el juego.</p>
             </div>
-            <div class="ImagenContainer">
-            </div>
+            <div class="ImagenNosotros"></div>
         </section>
 
         <!--SECCION FOOTER-->
@@ -121,6 +124,7 @@
             </div>
         </section>
         <!--FIN SECCION FOOTER-->
+
+        <script src="public/assets/scripts/main.js"></script>
     </body>
 </html>
-

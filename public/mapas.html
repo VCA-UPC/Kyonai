@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,24 @@
 </head>
     <body>
         <!--Encabezado de la pagina-->
-        <nav class="Encabezado">
-            <div class="LogoContainer">
-                <a href="../index.html">
-                    <span class="NombreLogo">Kyonai</span>
-                </a>
-            </div>
-            <ul class="Menu-Horizontal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="mapas.html">Mapas</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="registro.html">Regístrate</a></li>
-                <li><a href="">Simulación</a></li>
-            </ul>
-        </nav>
+        <header>
+            <a href="index.html" class="logo">
+                    <p>Kyonai</p>
+            </a>
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="mapas.html">Mapas</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="registro.html">Regístrate</a></li>
+                    <li><a href="">Simulación</a></li>
+                </ul>
+            </nav>
+        </header>
         <span id="Mapas"></span>
         <!--Seccion de mapas-->
         <section class="SeccionMapas">
@@ -31,7 +35,7 @@
             </div>
             <div class="MapasContainer">
                 <div class="MapaTipo1"> <!--MAPA 1-->
-                    <img src="public/assets/images/mapa1.png" alt="">
+                    <img src="assets/images/mapa1.png" alt="">
                     <div class="TextoMapaTipo1">
                         <h3>El jardín susurrante</h3>
                         <p>Un hermoso jardín botánico de estilo japonés, lleno de cerezos en flor, pequeños puentes de madera y estanques con carpas koi. La atmósfera es serena y pacífica, ideal para paseos contemplativos y conversaciones tranquilas al lado de una cascada.</p>
@@ -42,7 +46,7 @@
                         <h3>La Galería de los Sueños Lúcidos</h3>
                         <p>Una galería de arte moderna y espaciosa con paredes blancas y grandes ventanales. Las obras expuestas son abstractas y coloridas, invitando a la reflexión. Es un lugar perfecto para compartir opiniones sobre arte o simplemente disfrutar de la tranquilidad mientras observas.</p>
                     </div>
-                    <img src="public/assets/images/mapa2.png" alt="">
+                    <img src="assets/images/mapa2.png" alt="">
                 </div>
             </div>
         </section>
@@ -51,20 +55,20 @@
         <section class="footerMapa">
             <div class="SocialMediaContainer">
                 <div class="Logo">
-                    <img src="public/assets/images/iconTwitter.png" alt="">
+                    <img src="assets/images/iconTwitter.png" alt="">
                 </div>
                 <div class="Logo">
-                    <img src="public/assets/images/iconYoutube.png" alt="">
+                    <img src="assets/images/iconYoutube.png" alt="">
                 </div>
                 <div class="Logo">
-                    <img src="public/assets/images/iconTikTok.png" alt="">
+                    <img src="assets/images/iconTikTok.png" alt="">
                 </div>
                 <div class="Logo">
-                    <img src="public/assets/images/iconInstagram.png" alt="">
+                    <img src="assets/images/iconInstagram.png" alt="">
                 </div>
             </div>
             <div class="LogoContainer">
-                <img src="public/assets/images/kyonai2.png" alt="Kyonai logo">
+                <img src="assets/images/kyonai2.png" alt="Kyonai logo">
             </div>
             <div class="TextoCopyright">
                 <p>© 2025-2030 VCA, Inc. VCA, Kyonai y todos los logotipos relacionados son marcas y nombres comerciales, marcas de servicio o marcas registradas de VCA Inc.  </p>
@@ -76,6 +80,6 @@
             </div>
         </section>
         <!--FIN SECCION FOOTER-->
+        <script src="assets/scripts/main.js"></script>
     </body>
 </html>
-
