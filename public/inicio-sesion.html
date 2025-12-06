@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/style-iniciar-sesion.css">
     <meta charset="UTF-8">
@@ -9,21 +10,24 @@
 </head>
     <body>
         <!--Encabezado de la pagina-->
-        <nav class="Encabezado">
-            <div class="LogoContainer">
-                <a href="../index.html">
-                    <span class="NombreLogo">Kyonai</span>
-                </a>
-            </div>
-            <ul class="Menu-Horizontal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="mapas.html">Mapas</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-                <li><a href="inicio-sesion.html">Iniciar Sesión</a></li>
-                <li><a href="menu_simulacion.html">Simulación</a></li>
-            </ul>
-        </nav>
+        <header>
+            <a href="index.html" class="logo">
+                    <p>Kyonai</p>
+            </a>
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="public/noticias.html">Noticias</a></li>
+                    <li><a href="public/mapas.html">Mapas</a></li>
+                    <li><a href="public/soporte.html">Soporte</a></li>
+                    <li><a href="public/registro.html">Regístrate</a></li>
+                    <li><a href="public/menu_simulacion.html">Simulación</a></li>
+                </ul>
+            </nav>
+        </header>
         
         <!--Seccion de Registro -->
         <!-- Encabezado de Registro -->
@@ -87,6 +91,7 @@
                 </div>
             </div>
         </section>
+        <script src="assets/scripts/main.js"></script>
         <script src="assets/scripts/login.js"></script>
     </body>
 </html>
